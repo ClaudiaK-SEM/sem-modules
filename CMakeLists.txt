@@ -58,4 +58,5 @@ include(cmake/plugin_helper.cmake)
 
 # Add all modules
 # add_subdirectory(modules/CK_MidiToCv)
-add_subdirectory(modules/CK_MidiToCv-1.5)
+# add_subdirectory(modules/CK_MidiToCv-1.5)
+add_subdirectory(modules/CK_tools )
