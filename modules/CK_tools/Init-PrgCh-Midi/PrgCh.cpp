@@ -1,4 +1,4 @@
-#include ".\PrgCh.h"
+#include "PrgCh.h"
 #include <Time.h>
 REGISTER_PLUGIN (PrgCh, L"KxPrgChange" );
 

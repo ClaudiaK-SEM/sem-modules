@@ -1,4 +1,4 @@
-#include ".\Scope3.h"
+#include "Scope3.h"
 #include "../shared/xplatform.h"
 
 REGISTER_PLUGIN( Scope3, L"KX SCOPE V4" );

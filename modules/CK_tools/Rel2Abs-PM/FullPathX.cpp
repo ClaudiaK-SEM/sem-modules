@@ -1,4 +1,4 @@
-#include ".\FullPathX.h"
+#include "FullPathX.h"
 #include "../shared/unicode_conversion.h"
 #include "../shared/it_enum_list.h"
 #include "../shared/string_utilities.h"

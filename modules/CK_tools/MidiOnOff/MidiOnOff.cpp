@@ -1,4 +1,4 @@
-#include "./MidiOnOff.h"
+#include "MidiOnOff.h"
 
 REGISTER_PLUGIN ( MidiOnOff, L"kx midi on off" );
 

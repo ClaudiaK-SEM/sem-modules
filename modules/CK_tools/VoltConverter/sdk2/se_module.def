@@ -1,6 +1,0 @@
-LIBRARY			Module
-;EXPORTS			main
-
-; GCC
-;EXPORTS            main  in 
-;EXPORTS            main=main_plugin 

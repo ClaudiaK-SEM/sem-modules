@@ -1,4 +1,4 @@
-#include ".\PrgChGui.h"
+#include "PrgChGui.h"
 #include <Time.h>
 
 REGISTER_GUI_PLUGIN( PrgChGui, L"KxPrgChange" );

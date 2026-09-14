@@ -3,7 +3,7 @@
 
 #include <codecvt>
 #include <locale>
-#include "./WaveRecorder3.h"
+#include "WaveRecorder3.h"
 #include "../shared/string_utilities.h"
 #include "../shared/xp_simd.h"
 #include "../se_sdk3/PinIterator.h"

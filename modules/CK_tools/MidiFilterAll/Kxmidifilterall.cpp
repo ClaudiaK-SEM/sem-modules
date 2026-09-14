@@ -1,4 +1,4 @@
-#include ".\Kxmidifilterall.h"
+#include "Kxmidifilterall.h"
 
 #define SUB_ID_TUNING_STANDARD  0x08
 #define UNIVERSAL_NON_REAL_TIME 0x7E

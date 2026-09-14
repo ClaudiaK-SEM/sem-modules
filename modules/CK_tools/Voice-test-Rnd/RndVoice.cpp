@@ -1,5 +1,5 @@
 //#include "windows.h"
-#include ".\RndVoice.h"
+#include "RndVoice.h"
 //#include "stdlib.h"
 
 REGISTER_PLUGIN ( RndVoice, L"KX77FREE VOICE ID" );

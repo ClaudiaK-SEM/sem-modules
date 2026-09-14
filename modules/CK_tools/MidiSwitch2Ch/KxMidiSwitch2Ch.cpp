@@ -1,4 +1,4 @@
-#include ".\KxMidiSwitch2Ch.h"
+#include "KxMidiSwitch2Ch.h"
 
 REGISTER_PLUGIN ( KxMidiSwitch2Ch, L"My KX MIDI SWITCH2 CH" );
 

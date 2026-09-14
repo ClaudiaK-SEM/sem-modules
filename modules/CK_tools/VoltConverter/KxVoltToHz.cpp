@@ -1,4 +1,4 @@
-#include ".\KxVoltToHz.h"
+#include "KxVoltToHz.h"
 
 REGISTER_PLUGIN( KxVoltToHz, L"KxVoltConverter" );
 
