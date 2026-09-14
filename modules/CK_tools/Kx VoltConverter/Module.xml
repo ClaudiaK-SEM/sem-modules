@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+  <Plugin id="KX VoltConverter" name="KX VoltConverter" category="x16" graphicsApi="none">
+    <Parameters>
+        <Parameter id="0" name="DspToConverter" datatype="float" private="true" ignorePatchChange="true"/>
+    </Parameters>
+    <Audio>
+        <Pin id="0" name="DspToConverter" direction="out" datatype="float" parameterId="0" private="true"/>
+        <Pin id="1" name="Volt" direction="in" datatype="float"  rate="audio"/>
+    </Audio>
+    <GUI>
+        <Pin id="0" name="DspToConverter" direction="in" datatype="float" parameterId="0" private="true"/>
+        <Pin id="1" name="Converted Int" direction="out" datatype="int"/>
+        <Pin id="2" name="Converted string" direction="out" datatype="string"/>
+        <Pin id="3" name="Converted float" direction="out" datatype="float"/>
+        <Pin id="4" name="Mode" direction="in" datatype="enum" default="0" metadata="Float=0,Volt to dB=1,db to Volt=2,Volt to Hz=3,Hz to Volt=4,Hz to Bpm=5,Bpm to Hz=6,Volt to Bpm=7,Bpm to Volt=8"/>
+    </GUI>
+  </Plugin>
+</PluginList>

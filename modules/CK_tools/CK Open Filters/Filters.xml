@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+    <Plugin id="Open-CK-FILTERS" name="Open-CK-FILTERS" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin name="In" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin name="Cutoff" direction="in" datatype="float" rate="audio" default="0.5"/>
+        <Pin name="Res" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin name="Out" direction="out" datatype="float" rate="audio"/>
+        <Pin name="Mode" direction="in" datatype="enum" default="0" metadata="off=0,NoRes=1,MgLnr=2,MgL=3,MgL*=4,Mg*=5,MgS*=6,HP=7,SvLP=8,SvHP=9,SvBP=10,SvBR=11,RsvLp=12,RsvHp=13,RsvBp=14,RsvBr=15"/>
+        <Pin name="SVF P or Res" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin name="Off" datatype="bool" default="false" />
+        <Pin name="VoiceReset" direction="in" datatype="float" hostConnect="Voice/Active" isPolyphonic="true" />
+        </Audio>
+    </Plugin>
+</PluginList>
+
+

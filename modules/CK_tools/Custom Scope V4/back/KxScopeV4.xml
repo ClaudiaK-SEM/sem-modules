@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+<Plugin id="KX SCOPE V4" name="KX Scope V4" category="Experimental" about="Original code by Jeff, modified by KX77FREE" graphicsApi="GmpiGui" polyphonicAggregator="true" voiceMonitorIgnore="true" >
+    <Parameters>
+      <Parameter id="0" name="Capture Data A" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
+      <Parameter id="1" name="PatchStore" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
+    </Parameters>
+    <Audio>
+      <Pin id="0" name="Capture Data A" direction="out" datatype="blob"  parameterId="0" private="true"/>
+      <Pin id="1" name="Signal A" direction="in" datatype="float" rate="audio"/>
+      <Pin id="2" name="Ms" direction="in" datatype="float"  rate="audio" />
+      <Pin id="3" name="PatchStoreOut" direction="out" datatype="blob" parameterId="1" private="true"/>
+      <Pin id="4" name="On" direction="in" datatype="enum" metadata="off,on" default="0"/>
+      <Pin id="5" name="Lum" direction="in" datatype="float"  rate="audio" />
+    </Audio>
+    <GUI>
+      <Pin id="0" name="Capture Data A" direction="in" datatype="blob" parameterId="0" private="true"/>
+      <Pin id="1" name="PatchStoreIn" direction="in" datatype="blob" parameterId="1" private="true"/>
+    </GUI>
+  </Plugin>
+</PluginList>
