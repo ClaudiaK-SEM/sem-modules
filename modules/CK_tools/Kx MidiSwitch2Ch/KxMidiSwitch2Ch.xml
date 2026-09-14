@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+	<Plugin id="My KX MIDI SWITCH2 CH" name="KX MIDI SWITCH2 CH" category="" graphicsApi="none" helpUrl="KxMidiSwitch2Ch.htm">
+		<Audio>
+			<Pin id="0" name="MIDI In" direction="in" datatype="midi"/>
+			<Pin id="1" name="Midi Out A" direction="out" datatype="midi"/>
+			<Pin id="2" name="Midi Out B" direction="out" datatype="midi"/>
+			<Pin id="3" name="Switch" direction="in" datatype="enum" default="0" metadata="A=0,B=1"/>
+			<Pin id="4" name="Change Channel detect" direction="in" datatype="enum" default="0" metadata="Off=0,On=1"/>
+		</Audio>
+	</Plugin>
+</PluginList>
+
+

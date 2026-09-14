@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+
+    <!-- SampleOscillator3 ------------------------------------------------------------------------------------------->
+
+    <Plugin id="SampleOscillator3" name="Sample Oscillator3" category="KxCommon" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="Sample ID" direction="in" datatype="int"/>
+        <Pin id="1" name="Pitch" direction="in" datatype="float" rate="audio" default="0.5"/>
+        <Pin id="2" name="Trigger" direction="in" datatype="float" rate="audio" default="1.0"/>
+        <Pin id="3" name="Gate" direction="in" datatype="float" rate="audio" default="1.0"/>
+        <Pin id="4" name="Velocity" direction="in" datatype="float" rate="audio" default="0.8"/>
+        <Pin id="5" name="Quality" direction="in" datatype="enum" metadata="None=0,Low (Linear)=2,Mid (Cubic)= 4,High (sinc8)=8" default="8"/>
+        <Pin id="6" name="Left (mono)" direction="out" datatype="float" rate="audio"/>
+        <Pin id="7" name="Right" direction="out" datatype="float" rate="audio"/>
+        <Pin id="8" name="On/Off" direction="in" datatype="enum" metadata="off=0,on=1" default="0"/>
+        <Pin id="9" name="Mod" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="10" name="Sample tracking" direction="in" datatype="enum" metadata="Loop=0,Drum=1" default="0"/>
+        <!--Pin id="11" name="FadeLoop" direction="in" datatype="enum" metadata="off=0,on=1" default="0"/-->
+        </Audio>
+    </Plugin>
+
+    <Plugin id="SampleLoader4Gui" name="Sample Loader4 GUI" category="KxCommon">
+        <Parameters>
+        <Parameter id="0" name="Filename to gui" datatype="string" private="true" />
+        <Parameter id="1" name="Bank to gui" datatype="int" default="0" private="true" />
+        <Parameter id="2" name="Patch to Gui" datatype="int"  default="0" private="true" />
+        <Parameter id="3" name="Gui Id to Dsp" datatype="int" default="-1" private="true" ignorePatchChange="true" persistant="false" />
+        <Parameter id="4" name="Dsp Id to Gui" datatype="int"  default="-1" private="true" ignorePatchChange="true" persistant="false" />
+        </Parameters>
+        <Audio>
+        <Pin id="0" name="Filename" direction="in" datatype="string" isFilename="true" metadata="sf2"/>
+        <Pin id="1" name="Bank" direction="in" datatype="int"/>
+        <Pin id="2" name="Patch" direction="in" datatype="int"/>
+        <Pin id="3" name="Sample ID" direction="out" datatype="int"/>
+        <Pin id="4" name="Filename to gui" direction="out" datatype="string" parameterId="0"/>
+        <Pin id="5" name="Bank to gui" direction="out" datatype="int" parameterId="1"/>
+        <Pin id="6" name="Patch to gui" direction="out" datatype="int" parameterId="2"/>
+        <Pin id="7" name="Id from Gui" direction="in" datatype="int" parameterId="3"/>
+        <Pin id="8" name="Id To Gui" direction="out" datatype="int" parameterId="4"/>
+        </Audio>
+        <GUI>
+        <Pin id="0" name="Filename" direction="in" datatype="string" parameterId="0"/>
+        <Pin id="1" name="Bank" direction="in" datatype="int" parameterId="1"/>
+        <Pin id="2" name="Patch" direction="in" datatype="int" parameterId="2"/>
+        <Pin id="3" name="Bank Names" direction="out" datatype="string"/>
+        <Pin id="4" name="Patch Names" direction="out" datatype="string"/>
+        <Pin id="5" name="Patch reset" direction="in" datatype="int" />
+        <Pin id="6" name="Bank reset" direction="in" datatype="int" />
+        <Pin id="7" name="Id To Dsp" direction="in" datatype="int" parameterId="3"/>
+        <Pin id="8" name="Id from Dsp" direction="in" datatype="int" parameterId="4"/>
+        <Pin id="9" name="RndIn" direction="in" datatype="int"/>
+        </GUI>
+    </Plugin>
+
+</PluginList>

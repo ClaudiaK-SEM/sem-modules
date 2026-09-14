@@ -1,0 +1,1065 @@
+# depslib dependency file v1.0
+1140008760 c:\se\code se gui template scope\module.cpp
+	"Module.h"
+	"SEMod_struct.h"
+	"SEPin.h"
+	<assert.h>
+
+1140008760 c:\se\code se gui template scope\module.h
+	"SEModule_base.h"
+
+1140008760 c:\se\se_sdk2\semodule_base.h
+	"SEMod_struct_base.h"
+	<string.h>
+
+1140008760 c:\se\se_sdk2\semod_struct_base.h
+	"se_datatypes.h"
+	<windows.h>
+
+1140008760 c:\se\se_sdk2\se_datatypes.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\windows.h
+	<winresrc.h>
+	<excpt.h>
+	<stdarg.h>
+	<windef.h>
+	<winbase.h>
+	<wingdi.h>
+	<winuser.h>
+	<winnls.h>
+	<wincon.h>
+	<winver.h>
+	<winreg.h>
+	<winnetwk.h>
+	<cderr.h>
+	<dde.h>
+	<ddeml.h>
+	<dlgs.h>
+	<lzexpand.h>
+	<mmsystem.h>
+	<nb30.h>
+	<rpc.h>
+	<shellapi.h>
+	<winperf.h>
+	<winsock.h>
+	<wincrypt.h>
+	<winefs.h>
+	<winscard.h>
+	<winspool.h>
+	<ole.h>
+	<ole2.h>
+	<commdlg.h>
+	<stralign.h>
+	<winwlm.h>
+	<ole2.h>
+	<winsvc.h>
+	<mcx.h>
+	<imm.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winresrc.h
+	<winuser.rh>
+	<commctrl.rh>
+	<dde.rh>
+	<winnt.rh>
+	<dlgs.h>
+	<winver.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winuser.rh
+
+1113494078 c:\program files\microsoft visual c++ toolkit 2003\include\commctrl.rh
+
+1113494080 c:\program files\microsoft visual c++ toolkit 2003\include\dde.rh
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winnt.rh
+
+1113494082 c:\program files\microsoft visual c++ toolkit 2003\include\dlgs.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winver.h
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\excpt.h
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\stdarg.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\windef.h
+	<winnt.h>
+	<specstrings.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winnt.h
+	<ctype.h>
+	<specstrings.h>
+	<basetsd.h>
+	<guiddef.h>
+	<pshpack4.h>
+	<poppack.h>
+	"pshpack4.h"
+	"pshpack2.h"
+	"pshpack1.h"
+	"poppack.h"
+	"pshpack2.h"
+	<pshpack2.h>
+	<poppack.h>
+	"poppack.h"
+	"pshpack8.h"
+	"poppack.h"
+	"poppack.h"
+	<string.h>
+	<string.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\ctype.h
+
+1113494098 c:\program files\microsoft visual c++ toolkit 2003\include\specstrings.h
+
+1113494076 c:\program files\microsoft visual c++ toolkit 2003\include\basetsd.h
+
+1113494084 c:\program files\microsoft visual c++ toolkit 2003\include\guiddef.h
+	<string.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\string.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\pshpack4.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\poppack.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\pshpack2.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\pshpack1.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\pshpack8.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winbase.h
+	<macwin32.h>
+	<winerror.h>
+	"winbase.inl"
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winerror.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winbase.inl
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\wingdi.h
+	<macwin32.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack2.h>
+	<poppack.h>
+	<pshpack2.h>
+	<poppack.h>
+	<pshpack4.h>
+	<poppack.h>
+	"pshpack4.h"
+	"poppack.h"
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winuser.h
+	<macwin32.h>
+	<stdarg.h>
+	<pshpack2.h>
+	<poppack.h>
+	<tvout.h>
+	"winuser.inl"
+
+1113494100 c:\program files\microsoft visual c++ toolkit 2003\include\tvout.h
+	<guiddef.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winuser.inl
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winnls.h
+	<macwin32.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\wincon.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winreg.h
+	<macwin32.h>
+	<reason.h>
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\reason.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winnetwk.h
+
+1113494076 c:\program files\microsoft visual c++ toolkit 2003\include\cderr.h
+
+1113494080 c:\program files\microsoft visual c++ toolkit 2003\include\dde.h
+	<windef.h>
+
+1113494080 c:\program files\microsoft visual c++ toolkit 2003\include\ddeml.h
+
+1113494086 c:\program files\microsoft visual c++ toolkit 2003\include\lzexpand.h
+
+1113494088 c:\program files\microsoft visual c++ toolkit 2003\include\mmsystem.h
+	<pshpack1.h>
+	<macwin32.h>
+	<poppack.h>
+
+1113494092 c:\program files\microsoft visual c++ toolkit 2003\include\nb30.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\rpc.h
+	<windows.h>
+	<pshpack2.h>
+	<basetsd.h>
+	<pshpack8.h>
+	<setjmp.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcerr.h>
+	<rpcmac.h>
+	<poppack.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcnterr.h>
+	<excpt.h>
+	<winerror.h>
+	<rpcasync.h>
+	<poppack.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\setjmp.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\rpcdce.h
+	<specstrings.h>
+	<guiddef.h>
+	<rpcdcep.h>
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\rpcdcep.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\rpcnsi.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\rpcnterr.h
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\rpcasync.h
+	<pshpack8.h>
+	<poppack.h>
+
+1113494098 c:\program files\microsoft visual c++ toolkit 2003\include\shellapi.h
+	<pshpack1.h>
+	<poppack.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winperf.h
+	<pshpack8.h>
+	<poppack.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winsock.h
+	<windows.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\wincrypt.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winefs.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winscard.h
+	<wtypes.h>
+	<winioctl.h>
+	"winsmcrd.h"
+	"SCardErr.h"
+
+1113494104 c:\program files\microsoft visual c++ toolkit 2003\include\wtypes.h
+	"rpc.h"
+	"rpcndr.h"
+	"basetsd.h"
+	"guiddef.h"
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\rpcndr.h
+	<pshpack8.h>
+	<basetsd.h>
+	<rpcnsip.h>
+	<poppack.h>
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\rpcnsip.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winioctl.h
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+	<pshpack1.h>
+	<poppack.h>
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winsmcrd.h
+
+1113494098 c:\program files\microsoft visual c++ toolkit 2003\include\scarderr.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winspool.h
+	<prsht.h>
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\prsht.h
+	<pshpack8.h>
+	<pshpack4.h>
+	<poppack.h>
+
+1113494094 c:\program files\microsoft visual c++ toolkit 2003\include\ole.h
+	<pshpack1.h>
+	<poppack.h>
+
+1113494094 c:\program files\microsoft visual c++ toolkit 2003\include\ole2.h
+	<pshpack8.h>
+	"macname1.h"
+	<winerror.h>
+	<macpub.h>
+	<objbase.h>
+	<oleauto.h>
+	<oleidl.h>
+	<poppack.h>
+	<macapi.h>
+	"macname2.h"
+
+1113494094 c:\program files\microsoft visual c++ toolkit 2003\include\objbase.h
+	<rpc.h>
+	<rpcndr.h>
+	<pshpack8.h>
+	<stdlib.h>
+	<wtypes.h>
+	<unknwn.h>
+	<objidl.h>
+	<guiddef.h>
+	<cguid.h>
+	<urlmon.h>
+	<propidl.h>
+	<poppack.h>
+
+1024573158 c:\program files\microsoft visual c++ toolkit 2003\include\stdlib.h
+
+1113494100 c:\program files\microsoft visual c++ toolkit 2003\include\unknwn.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"wtypes.h"
+
+1113494094 c:\program files\microsoft visual c++ toolkit 2003\include\objidl.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"unknwn.h"
+
+1113494076 c:\program files\microsoft visual c++ toolkit 2003\include\cguid.h
+
+1113494100 c:\program files\microsoft visual c++ toolkit 2003\include\urlmon.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+	"oleidl.h"
+	"servprov.h"
+	"msxml.h"
+
+1113494094 c:\program files\microsoft visual c++ toolkit 2003\include\oleidl.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+
+1113494098 c:\program files\microsoft visual c++ toolkit 2003\include\servprov.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+
+1113494092 c:\program files\microsoft visual c++ toolkit 2003\include\msxml.h
+	"rpc.h"
+	"rpcndr.h"
+	"unknwn.h"
+	"objidl.h"
+	"oaidl.h"
+
+1113494094 c:\program files\microsoft visual c++ toolkit 2003\include\oaidl.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+
+1113494096 c:\program files\microsoft visual c++ toolkit 2003\include\propidl.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+	"oaidl.h"
+
+1113494094 c:\program files\microsoft visual c++ toolkit 2003\include\oleauto.h
+	<pshpack8.h>
+	<oaidl.h>
+	<poppack.h>
+
+1113494078 c:\program files\microsoft visual c++ toolkit 2003\include\commdlg.h
+	<prsht.h>
+	<pshpack1.h>
+	<poppack.h>
+
+1113494098 c:\program files\microsoft visual c++ toolkit 2003\include\stralign.h
+
+1113494102 c:\program files\microsoft visual c++ toolkit 2003\include\winsvc.h
+
+1113494086 c:\program files\microsoft visual c++ toolkit 2003\include\mcx.h
+
+1113494084 c:\program files\microsoft visual c++ toolkit 2003\include\imm.h
+
+1140008760 c:\se\se_sdk2\semod_struct.h
+	"SEMod_struct_base.h"
+
+1140008760 c:\se\se_sdk2\sepin.h
+	"se_datatypes.h"
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\assert.h
+
+1140008760 c:\se\code se gui template scope\semodulemain.cpp
+	"Module.h"
+	"GuiModule.h"
+	"semod_struct.h"
+	<windows.h>
+
+1140008760 c:\se\code se gui template scope\guimodule.h
+	"segui_base.h"
+
+1140008760 c:\se\se_sdk2\segui_base.h
+	"SEGUI_struct_base.h"
+	"SeSdk_String.h"
+	"SeGui_Pin.h"
+	<vector>
+
+1152141723 c:\se\se_sdk2\segui_struct_base.h
+	"se_datatypes.h"
+	<windows.h>
+
+1140008760 c:\se\se_sdk2\sesdk_string.h
+	<string>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\string
+	<istream>
+
+1023462738 c:\program files\microsoft visual c++ toolkit 2003\include\istream
+	<ostream>
+
+1023462738 c:\program files\microsoft visual c++ toolkit 2003\include\ostream
+	<ios>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\ios
+	<xlocnum>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\xlocnum
+	<cerrno>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<streambuf>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\cerrno
+	<yvals.h>
+	<errno.h>
+	<errno.h>
+
+1027031652 c:\program files\microsoft visual c++ toolkit 2003\include\yvals.h
+	<use_ansi.h>
+
+1022794094 c:\program files\microsoft visual c++ toolkit 2003\include\use_ansi.h
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\errno.h
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\climits
+	<yvals.h>
+	<limits.h>
+
+1031666048 c:\program files\microsoft visual c++ toolkit 2003\include\limits.h
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\cstdio
+	<yvals.h>
+	<stdio.h>
+	<stdio.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\stdio.h
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\cstdlib
+	<yvals.h>
+	<stdlib.h>
+	<stdlib.h>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\streambuf
+	<xiosbase>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\xiosbase
+	<xlocale>
+
+1022743174 c:\program files\microsoft visual c++ toolkit 2003\include\xlocale
+	<climits>
+	<cstring>
+	<stdexcept>
+	<typeinfo>
+	<xdebug>
+	<xlocinfo>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\cstring
+	<yvals.h>
+	<string.h>
+	<string.h>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\stdexcept
+	<exception>
+	<xstring>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\exception
+	<xstddef>
+	<eh.h>
+
+1024927730 c:\program files\microsoft visual c++ toolkit 2003\include\xstddef
+	<yvals.h>
+	<cstddef>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\cstddef
+	<yvals.h>
+	<stddef.h>
+	<stddef.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\stddef.h
+
+1025092174 c:\program files\microsoft visual c++ toolkit 2003\include\eh.h
+
+1024927730 c:\program files\microsoft visual c++ toolkit 2003\include\xstring
+	<xmemory>
+
+1024927730 c:\program files\microsoft visual c++ toolkit 2003\include\xmemory
+	<cstdlib>
+	<new>
+	<xutility>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\new
+	<exception>
+
+1023892978 c:\program files\microsoft visual c++ toolkit 2003\include\xutility
+	<climits>
+	<utility>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\utility
+	<iosfwd>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\iosfwd
+	<cstdio>
+	<cstring>
+	<cwchar>
+	<xstddef>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\cwchar
+	<yvals.h>
+	<wchar.h>
+	<wchar.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\wchar.h
+
+1022794094 c:\program files\microsoft visual c++ toolkit 2003\include\typeinfo
+	<xstddef>
+	<typeinfo.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\typeinfo.h
+	<stdexcpt.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\stdexcpt.h
+	<exception>
+
+1023459658 c:\program files\microsoft visual c++ toolkit 2003\include\xdebug
+	<yvals.h>
+	<xmemory>
+	<xstring>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\xlocinfo
+	<xlocinfo.h>
+	<cstdlib>
+	<xstddef>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\xlocinfo.h
+	<ctype.h>
+	<locale.h>
+	<wchar.h>
+	<yvals.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\locale.h
+
+1140008760 c:\se\se_sdk2\segui_pin.h
+	"SeSdk_String.h"
+
+1025256632 c:\program files\microsoft visual c++ toolkit 2003\include\vector
+	<memory>
+	<stdexcept>
+
+1023972546 c:\program files\microsoft visual c++ toolkit 2003\include\memory
+	<iterator>
+	<xmemory>
+
+1022584224 c:\program files\microsoft visual c++ toolkit 2003\include\iterator
+	<xutility>
+
+1140008760 c:\se\se_sdk2\segui_base.cpp
+	"SEGUI_base.h"
+	"SEMod_struct_base.h"
+	<assert.h>
+	<string.h>
+
+1140008760 c:\se\se_sdk2\semodule_base.cpp
+	"SEModule_base.h"
+	"SEPin.h"
+	"SEMod_struct.h"
+	<assert.h>
+	<malloc.h>
+
+1022790494 c:\program files\microsoft visual c++ toolkit 2003\include\malloc.h
+
+1140008760 c:\se\se_sdk2\sepin.cpp
+	"SEPin.h"
+	"SEModule_base.h"
+	<assert.h>
+
+1140008760 c:\se\code se gui template scope\guimodule.cpp
+	"guimodule.h"
+	"windows.h"
+	<stdio.h>
+	<assert.h>
+
+1140008760 source:c:\all se\new\sse code se gui template scope\semodulemain.cpp
+	"Module.h"
+	"GuiModule.h"
+	"semod_struct.h"
+	<windows.h>
+
+1209525236 c:\all se\new\sse code se gui template scope\module.h
+	"SEModule_base.h"
+
+1195509576 c:\all se\new\se_sdk2\semodule_base.h
+	"SEMod_struct_base.h"
+	<string.h>
+
+1195509576 c:\all se\new\se_sdk2\semod_struct_base.h
+	"se_datatypes.h"
+	<windows .h>
+
+1195509576 c:\all se\new\se_sdk2\se_datatypes.h
+
+1209525236 c:\all se\new\sse code se gui template scope\guimodule.h
+	"segui_base.h"
+
+1195509576 c:\all se\new\se_sdk2\segui_base.h
+	"SEGUI_struct_base.h"
+	"SeSdk_String.h"
+	"SeGui_Pin.h"
+	<vector>
+
+1195509576 c:\all se\new\se_sdk2\segui_struct_base.h
+	"se_datatypes.h"
+	<windows.h>
+
+1195509576 c:\all se\new\se_sdk2\sesdk_string.h
+	<string>
+
+1195509576 c:\all se\new\se_sdk2\segui_pin.h
+	"SeSdk_String.h"
+
+1195509576 c:\all se\new\se_sdk2\semod_struct.h
+	"SEMod_struct_base.h"
+
+1195509576 source:c:\all se\new\se_sdk2\segui_base.cpp
+	"SEGUI_base.h"
+	"SEMod_struct_base.h"
+	<assert.h>
+	<string.h>
+
+1195509576 source:c:\all se\new\se_sdk2\semodule_base.cpp
+	"SEModule_base.h"
+	"SEPin.h"
+	"SEMod_struct.h"
+	<assert.h>
+	<malloc.h>
+
+1195509576 c:\all se\new\se_sdk2\sepin.h
+	"se_datatypes.h"
+
+1195509576 source:c:\all se\new\se_sdk2\sepin.cpp
+	"SEPin.h"
+	"SEModule_base.h"
+	<assert.h>
+
+1209530995 source:c:\all se\new\sse code se gui template scope\module.cpp
+	"Module.h"
+	"SEMod_struct.h"
+	"SEPin.h"
+	<assert.h>
+
+1209531522 source:c:\all se\new\sse code se gui template scope\guimodule.cpp
+	"guimodule.h"
+	"windows.h"
+	<stdio.h>
+	<assert.h>
+
+1195509576 source:c:\all se\new\se_sdk2\segui_pin.cpp
+	"SeGui_Pin.h"
+	"SEGUI_base.h"
+
+1198769022 c:\program files\codeblocks\mingw\include\string.h
+	<_mingw.h>
+	<stddef.h>
+
+1198769016 c:\program files\codeblocks\mingw\include\_mingw.h
+
+1198769018 c:\program files\codeblocks\mingw\include\assert.h
+	<_mingw.h>
+
+1198768048 c:\program files\codeblocks\mingw\include\windows.h
+	<winresrc.h>
+	<stdarg.h>
+	<windef.h>
+	<wincon.h>
+	<winbase.h>
+	<wingdi.h>
+	<winuser.h>
+	<winnls.h>
+	<winver.h>
+	<winnetwk.h>
+	<winreg.h>
+	<winsvc.h>
+	<cderr.h>
+	<dde.h>
+	<ddeml.h>
+	<dlgs.h>
+	<imm.h>
+	<lzexpand.h>
+	<mmsystem.h>
+	<nb30.h>
+	<rpc.h>
+	<shellapi.h>
+	<winperf.h>
+	<commdlg.h>
+	<winspool.h>
+	<winsock2.h>
+	<winsock.h>
+	<ole2.h>
+
+1198768048 c:\program files\codeblocks\mingw\include\winresrc.h
+	<winuser.h>
+	<winnt.h>
+	<winver.h>
+	<dde.h>
+	<dlgs.h>
+	<commctrl.h>
+
+1198768050 c:\program files\codeblocks\mingw\include\winuser.h
+
+1198768048 c:\program files\codeblocks\mingw\include\winnt.h
+	<winerror.h>
+	<string.h>
+	<basetsd.h>
+	<pshpack4.h>
+	<poppack.h>
+
+1198768048 c:\program files\codeblocks\mingw\include\winerror.h
+
+1198768036 c:\program files\codeblocks\mingw\include\basetsd.h
+
+1198768044 c:\program files\codeblocks\mingw\include\pshpack4.h
+
+1198768044 c:\program files\codeblocks\mingw\include\poppack.h
+
+1198768050 c:\program files\codeblocks\mingw\include\winver.h
+
+1198768038 c:\program files\codeblocks\mingw\include\dde.h
+
+1198768038 c:\program files\codeblocks\mingw\include\dlgs.h
+
+1198768036 c:\program files\codeblocks\mingw\include\commctrl.h
+	<prsht.h>
+
+1198768044 c:\program files\codeblocks\mingw\include\prsht.h
+
+1198768048 c:\program files\codeblocks\mingw\include\windef.h
+	<winnt.h>
+
+1198768048 c:\program files\codeblocks\mingw\include\wincon.h
+
+1198768048 c:\program files\codeblocks\mingw\include\winbase.h
+
+1198768048 c:\program files\codeblocks\mingw\include\wingdi.h
+
+1198768048 c:\program files\codeblocks\mingw\include\winnls.h
+
+1198768048 c:\program files\codeblocks\mingw\include\winnetwk.h
+
+1198768048 c:\program files\codeblocks\mingw\include\winreg.h
+
+1198768050 c:\program files\codeblocks\mingw\include\winsvc.h
+
+1198768036 c:\program files\codeblocks\mingw\include\cderr.h
+
+1198768038 c:\program files\codeblocks\mingw\include\ddeml.h
+
+1198768038 c:\program files\codeblocks\mingw\include\imm.h
+
+1198768042 c:\program files\codeblocks\mingw\include\lzexpand.h
+
+1198768042 c:\program files\codeblocks\mingw\include\mmsystem.h
+
+1198768042 c:\program files\codeblocks\mingw\include\nb30.h
+
+1198768046 c:\program files\codeblocks\mingw\include\rpc.h
+	<windows.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcnterr.h>
+	<winerror.h>
+	<excpt.h>
+
+1198768046 c:\program files\codeblocks\mingw\include\rpcdce.h
+	<basetyps.h>
+	<rpcdcep.h>
+
+1198768036 c:\program files\codeblocks\mingw\include\basetyps.h
+
+1198768046 c:\program files\codeblocks\mingw\include\rpcdcep.h
+
+1198768046 c:\program files\codeblocks\mingw\include\rpcnsi.h
+
+1198768046 c:\program files\codeblocks\mingw\include\rpcnterr.h
+
+1198769018 c:\program files\codeblocks\mingw\include\excpt.h
+	<_mingw.h>
+	<windef.h>
+
+1198768046 c:\program files\codeblocks\mingw\include\shellapi.h
+	<pshpack2.h>
+	<poppack.h>
+
+1198768044 c:\program files\codeblocks\mingw\include\pshpack2.h
+
+1198768048 c:\program files\codeblocks\mingw\include\winperf.h
+
+1198768036 c:\program files\codeblocks\mingw\include\commdlg.h
+	<unknwn.h>
+	<prsht.h>
+
+1198768048 c:\program files\codeblocks\mingw\include\unknwn.h
+	<windows.h>
+	<objfwd.h>
+	<wtypes.h>
+
+1198768042 c:\program files\codeblocks\mingw\include\objfwd.h
+	<basetyps.h>
+
+1198768050 c:\program files\codeblocks\mingw\include\wtypes.h
+	<rpc.h>
+	<rpcndr.h>
+
+1198768046 c:\program files\codeblocks\mingw\include\rpcndr.h
+	<rpcnsip.h>
+	<objfwd.h>
+
+1198768046 c:\program files\codeblocks\mingw\include\rpcnsip.h
+
+1198768050 c:\program files\codeblocks\mingw\include\winspool.h
+
+1198768050 c:\program files\codeblocks\mingw\include\winsock2.h
+	<windows.h>
+
+1198768050 c:\program files\codeblocks\mingw\include\winsock.h
+	<windows.h>
+	<mswsock.h>
+
+1198768042 c:\program files\codeblocks\mingw\include\mswsock.h
+
+1198768044 c:\program files\codeblocks\mingw\include\ole2.h
+	<winerror.h>
+	<objbase.h>
+	<olectlid.h>
+	<oleauto.h>
+	<oleidl.h>
+
+1198768042 c:\program files\codeblocks\mingw\include\objbase.h
+	<rpc.h>
+	<rpcndr.h>
+	<stdlib.h>
+	<basetyps.h>
+	<wtypes.h>
+	<unknwn.h>
+	<objidl.h>
+	<cguid.h>
+
+1198769022 c:\program files\codeblocks\mingw\include\stdlib.h
+	<_mingw.h>
+	<stddef.h>
+
+1198768044 c:\program files\codeblocks\mingw\include\objidl.h
+	<objfwd.h>
+
+1198768036 c:\program files\codeblocks\mingw\include\cguid.h
+
+1198768044 c:\program files\codeblocks\mingw\include\olectlid.h
+
+1198768044 c:\program files\codeblocks\mingw\include\oleauto.h
+	<oaidl.h>
+
+1198768042 c:\program files\codeblocks\mingw\include\oaidl.h
+	<windows.h>
+	<ole2.h>
+
+1198768044 c:\program files\codeblocks\mingw\include\oleidl.h
+	<objfwd.h>
+
+1198769020 c:\program files\codeblocks\mingw\include\malloc.h
+	<_mingw.h>
+	<stdlib.h>
+
+1198769022 c:\program files\codeblocks\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/types.h>
+
+1198769024 c:\program files\codeblocks\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
+
+1210110111 source:c:\all se\new\scope2 ext\module.cpp
+	"Module.h"
+	"SEMod_struct.h"
+	"SEPin.h"
+	<assert.h>
+
+1210109489 c:\all se\new\scope2 ext\module.h
+	"SEModule_base.h"
+
+1140008760 source:c:\all se\new\scope2 ext\semodulemain.cpp
+	"Module.h"
+	"GuiModule.h"
+	"semod_struct.h"
+	<windows.h>
+
+1210202666 c:\all se\new\scope2 ext\guimodule.h
+	"segui_base.h"
+
+1210195886 source:c:\all se\new\scope2 ext\guimodule.cpp
+	"guimodule.h"
+	"windows.h"
+	<stdio.h>
+	<assert.h>
+
+1211668480 source:c:\all se\new\scope2 ext modulad 2.0\module.cpp
+	"Module.h"
+	"SEMod_struct.h"
+	"SEPin.h"
+	<assert.h>
+
+1211669611 c:\all se\new\scope2 ext modulad 2.0\module.h
+	"SEModule_base.h"
+
+1140008760 source:c:\all se\new\scope2 ext modulad 2.0\semodulemain.cpp
+	"Module.h"
+	"GuiModule.h"
+	"semod_struct.h"
+	<windows.h>
+
+1211669611 c:\all se\new\scope2 ext modulad 2.0\guimodule.h
+	"segui_base.h"
+
+1211668265 source:c:\all se\new\scope2 ext modulad 2.0\guimodule.cpp
+	"guimodule.h"
+	"windows.h"
+	<stdio.h>
+	<assert.h>
+
+1225668901 source:c:\xav data\se & sdk\all se\k-xno-va\freq\module.cpp
+	"Module.h"
+	"SEMod_struct.h"
+	"SEPin.h"
+	<assert.h>
+	<math.h>
+
+1244889092 c:\xav data\se & sdk\all se\k-xno-va\freq\module.h
+	"SEModule_base.h"
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\semodule_base.h
+	"SEMod_struct_base.h"
+	<string.h>
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\semod_struct_base.h
+	"se_datatypes.h"
+	<windows .h>
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\se_datatypes.h
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\semod_struct.h
+	"SEMod_struct_base.h"
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\sepin.h
+	"se_datatypes.h"
+
+1140008760 source:c:\xav data\se & sdk\all se\k-xno-va\freq\semodulemain.cpp
+	"Module.h"
+	"GuiModule.h"
+	"semod_struct.h"
+	<windows.h>
+
+1225958280 c:\xav data\se & sdk\all se\k-xno-va\freq\guimodule.h
+	"segui_base.h"
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\segui_base.h
+	"SEGUI_struct_base.h"
+	"SeSdk_String.h"
+	"SeGui_Pin.h"
+	<vector>
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\segui_struct_base.h
+	"se_datatypes.h"
+	<windows.h>
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\sesdk_string.h
+	<string>
+
+1195509576 c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\segui_pin.h
+	"SeSdk_String.h"
+
+1195509576 source:c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\segui_pin.cpp
+	"SeGui_Pin.h"
+	"SEGUI_base.h"
+
+1195509576 source:c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\segui_base.cpp
+	"SEGUI_base.h"
+	"SEMod_struct_base.h"
+	<assert.h>
+	<string.h>
+
+1195509576 source:c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\semodule_base.cpp
+	"SEModule_base.h"
+	"SEPin.h"
+	"SEMod_struct.h"
+	<assert.h>
+	<malloc.h>
+
+1195509576 source:c:\xav data\se & sdk\all se\k-xno-va\se_sdk2\sepin.cpp
+	"SEPin.h"
+	"SEModule_base.h"
+	<assert.h>
+
+1226009470 source:c:\xav data\se & sdk\all se\k-xno-va\freq\guimodule.cpp
+	"guimodule.h"
+	"SEGUI_Pin.h"
+	"windows.h"
+	<stdio.h>
+	<assert.h>
+
+1140008760 source:c:\xav data\se & sdk\all se\k-xno-va\hz\semodulemain.cpp
+	"Module.h"
+	"GuiModule.h"
+	"semod_struct.h"
+	<windows.h>
+
+1244974956 c:\xav data\se & sdk\all se\k-xno-va\hz\module.h
+	"SEModule_base.h"
+
+1244974746 c:\xav data\se & sdk\all se\k-xno-va\hz\guimodule.h
+	"segui_base.h"
+
+1226009470 source:c:\xav data\se & sdk\all se\k-xno-va\hz\guimodule.cpp
+	"guimodule.h"
+	"SEGUI_Pin.h"
+	"windows.h"
+	<stdio.h>
+	<assert.h>
+
