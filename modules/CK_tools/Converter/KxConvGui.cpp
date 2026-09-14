@@ -5,7 +5,8 @@
 #endif
 
 #include "KxConvGui.h"
-
+#include "math.h"
+//#include <cmath>
 
 REGISTER_GUI_PLUGIN( KxConvGui, L"KxConvGui" );
 
