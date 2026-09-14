@@ -8,8 +8,8 @@ build_gmpi_plugin(
     HAS_GUI
     SOURCE_FILES
         # CK Open Filters
-        CK Open Filters/Filters.cpp
-        CK Open Filters/Filters.h
+        CK-Open-Filters/Filters.cpp
+        CK-Open-Filters/Filters.h
 
         
 )
