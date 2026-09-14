@@ -47,7 +47,7 @@ X64 CK KX77FREE Tools.sem
 */
 
 
-#include ".\Filters.h"
+#include "Filters.h"
 #include "math.h"
 //#include <cmath>
 #include <mutex>
