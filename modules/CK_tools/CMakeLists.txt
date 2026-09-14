@@ -7,7 +7,7 @@ build_gmpi_plugin(
     HAS_DSP
     HAS_GUI
     SOURCE_FILES
-        # Module 1: CK Open Filters
+        # CK Open Filters
         CK Open Filters/Filters.cpp
         CK Open Filters/Filters.h
 
