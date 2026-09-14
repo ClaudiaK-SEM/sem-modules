@@ -10,6 +10,7 @@ build_gmpi_plugin(
         # CK Open Filters
         CK-Open-Filters/Filters.cpp
         CK-Open-Filters/Filters.h
-
-        
+        # Converter
+        Converter/KxConvGui.cpp
+        Converter/KxConvGui.h
 )
