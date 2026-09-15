@@ -8,6 +8,8 @@ build_gmpi_plugin(
     HAS_GUI
     SOURCE_FILES
 
+${se_sdk_folder}/smart_audio_pin.h
+${se_sdk_folder}/smart_audio_pin.cpp 
 
 # CK_MidiToCv/
 CK_MidiToCv/CK_MidiToCv.cpp
