@@ -57,8 +57,8 @@ Rel2Abs-PM/FullPathXGui.h
 SampleOscillator3/CSoundFont.cpp
 SampleOscillator3/CSoundFont.h
 SampleOscillator3/mfc_emulation.h
-SampleOscillator3/protected_ifstream.cpp
-SampleOscillator3/protected_ifstream.h
+# SampleOscillator3/protected_ifstream.cpp
+# SampleOscillator3/protected_ifstream.h
 SampleOscillator3/RiffFile2.cpp
 SampleOscillator3/RiffFile2.h
 SampleOscillator3/SampleLoader3.cpp
