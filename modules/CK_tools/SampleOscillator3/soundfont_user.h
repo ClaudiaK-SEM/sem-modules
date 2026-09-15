@@ -8,7 +8,7 @@
 #include <vector>
 #include "math.h"
 #include "assert.h"
-#include "csoundfont.h"
+#include "CSoundFont.h"
 
 class Jzone;
 class SoundfontPatch;
