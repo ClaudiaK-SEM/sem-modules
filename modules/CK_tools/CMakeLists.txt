@@ -107,4 +107,5 @@ VoltConverter/KxVoltToHzGui.h
 WaveRecorder3/WaveRecorder3.cpp
 WaveRecorder3/WaveRecorder3.h
 
+sem-version.rc
 )
