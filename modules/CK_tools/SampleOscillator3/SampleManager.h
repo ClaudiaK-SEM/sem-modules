@@ -2,7 +2,7 @@
 #pragma once
 
 #include <map>
-#include "csoundfont.h"
+#include "CSoundFont.h"
 #include "mp_sdk_common.h"
 
 struct sample_info
