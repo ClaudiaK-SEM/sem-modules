@@ -5,6 +5,7 @@
 #endif
 
 #include "KxVoltToHzGui.h"
+#include "math.h"
 
 
 REGISTER_GUI_PLUGIN( KxVoltToHzGui, L"KxVoltConverter" );
