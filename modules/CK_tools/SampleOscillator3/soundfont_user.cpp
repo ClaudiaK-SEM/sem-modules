@@ -2,7 +2,7 @@
 
 #include <algorithm>
 #include "soundfont_user.h"
-#include "CSoundFont"
+#include "CSoundFont.h"
 #include "SampleManager.h"
 
 #define RIGHT 1
