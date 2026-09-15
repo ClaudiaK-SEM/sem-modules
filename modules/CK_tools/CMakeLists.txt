@@ -8,6 +8,19 @@ build_gmpi_plugin(
     HAS_GUI
     SOURCE_FILES
 
+
+# CK_MidiToCv/
+CK_MidiToCv/CK_MidiToCv.cpp
+CK_MidiToCv/CK_MidiToCv.h
+CK_MidiToCv/CK_MidiToCvGui.cpp
+CK_MidiToCv/CK_MidiToCvGui.h
+
+# CK_MidiToCv-1.5/
+CK_MidiToCv-1.5/CK_MidiToCv15.cpp
+CK_MidiToCv-1.5/CK_MidiToCv15.h
+CK_MidiToCv-1.5/CK_MidiToCvGui15.cpp
+CK_MidiToCv-1.5/CK_MidiToCvGui15.h
+
 # CK Open Filters
 CK-Open-Filters/Filters.cpp
 CK-Open-Filters/Filters.h

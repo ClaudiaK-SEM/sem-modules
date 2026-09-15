@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PluginList>
+	<Plugin id="CK_MidiToCv" name="CK_MidiToCv" category="MIDI" polyphonicSource="true" cloned="true">
+        <Parameters>
+           <Parameter id="0" name="BlobToGui" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
+        </Parameters>
+        <Audio>
+          <Pin name="MIDI In" datatype="midi"/>
+          <Pin name="Channel" datatype="enum" default="-1" ignorePatchChange="true" metadata="All=-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16"/>
+          <Pin name="Trigger" datatype="float" rate="audio" direction="out"/>
+          <Pin name="Gate" datatype="float" rate="audio" direction="out"/>
+          <Pin name="Pitch" datatype="float" rate="audio" direction="out"/>
+          <Pin name="Velocity" datatype="float" rate="audio" direction="out"/>
+          <Pin name="Aftertouch" datatype="float" rate="audio" direction="out"/>
+
+          <Pin name="BlobToGui" direction="out" datatype="blob" parameterId="0" private="true"/>
+          <Pin name="Polyphony" datatype="int" default="6"/>
+          <Pin name="Polyphony Reserve" datatype="int" default="0"/>
+          <Pin name="Polyphony Mode" datatype="enum" default="0"  metadata="Soft,Hard,Overlap" />
+          <Pin name="Mono Mode" datatype="enum" default="0" metadata="On=1,Off=0"/>
+          <Pin name="Retrigger" datatype="enum" default="1" metadata="On=1,Off=0"/>
+          <Pin name="Mono Note Priority" datatype="enum" default="3" metadata="Off,Low,High,Last" />
+          <Pin name="Portamento Time" datatype="float" default="0.001" autoConfigureParameter="true"/>
+          <Pin name="Glide Rate" datatype="enum" default="1" metadata="Rate,Time" />
+          <Pin name="Auto Glide" datatype="enum" default="1" metadata="Legato,Always" />
+          <Pin name="Bend Range" datatype="enum" default="4" metadata="range 0,12" />
+          <Pin name="Voice Refresh" datatype="enum" default="1" metadata="VR On,VR Off" />
+          <Pin name="Old MidiToCv" datatype="enum" default="0" metadata="Off,On" />
+          <Pin name="Poly Glide" datatype="enum" default="0" metadata="Off,On" />
+
+          <Pin name="Voice/Active" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active"/>
+          <Pin name="Voice/Gate" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Gate"/>
+          <Pin name="Voice/Trigger" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Trigger"/>
+          <Pin name="Voice/VelocityKeyOn" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/VelocityKeyOn"/>
+          <Pin name="Voice/Pitch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Pitch"/>
+          <Pin name="Voice/VirtualVoiceId" datatype="int" private="true" isPolyphonic="true" hostConnect="Voice/VirtualVoiceId"/>
+          <Pin name="Bender" datatype="float" private="true" hostConnect="Bender"/>
+          <Pin name="HoldPedal" datatype="float" private="true" hostConnect="HoldPedal"/>
+          <!--SE 1.5-->
+          <!--Pin name="SostenutoPedal" datatype="float" private="true" isPolyphonic="true" hostConnect="SostenutoPedal"/>-->
+          <Pin name="GlideStartPitch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/GlideStartPitch"/>
+          <Pin name="VoiceAllocationMode" datatype="int" private="true" hostConnect="VoiceAllocationMode"/>
+          <Pin name="Portamento" datatype="float" private="true" hostConnect="Portamento"/>
+          <Pin name="BenderRange" datatype="float" private="true" hostConnect="BenderRange"/>
+          <Pin name="Voice/Aftertouch" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Aftertouch"/>
+          <Pin name="ChannelPressure" datatype="float" private="true" isPolyphonic="true" hostConnect="Channel Pressure"/>
+          <!--SE 1.5-->
+          <!--<Pin name="Voice/Bender" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Bender"/>-->
+        </Audio>
+        <GUI>
+          <Pin name="BlobToGui" direction="in" datatype="blob" parameterId="0" private="true"/>
+          <Pin name="Host Polyphony" direction="in" datatype="int" hostConnect="Polyphony" />
+          <Pin name="Host Polyphony Reserve" direction="in" datatype="int" hostConnect="ReserveVoices" />
+          <Pin name="Host VoiceAllocationMode" direction="in" datatype="int" hostConnect="VoiceAllocationMode"/>
+          <Pin name="Host PortamentoTime" hostConnect="Portamento" />
+          <Pin name="Host BenderRange" hostConnect="BenderRange" />
+        </GUI>
+    </Plugin>
+</PluginList>
