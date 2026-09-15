@@ -1,5 +1,5 @@
 #include "PrgCh.h"
-#include <Time.h>
+#include <time.h>
 REGISTER_PLUGIN (PrgCh, L"KxPrgChange" );
 
 PrgCh::PrgCh( IMpUnknown* host ) : MpBase( host )
