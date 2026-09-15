@@ -6,8 +6,8 @@
 #pragma warning(disable : 4996)
 
 #include "SampleLoader3Gui.h"
-#include "rifffile2.h"
-#include "csoundFont.h"
+#include "RiffFile2.h"
+#include "CSoundFont.h"
 #include "SampleManager.h"
 
 

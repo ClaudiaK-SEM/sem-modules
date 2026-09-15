@@ -4,7 +4,7 @@
 //
 #include <algorithm>
 #include <assert.h>
-#include "csoundfont.h"
+#include "CSoundFont.h"
 #include "RiffFile2.h"
 
 CSoundFont::CSoundFont() :
