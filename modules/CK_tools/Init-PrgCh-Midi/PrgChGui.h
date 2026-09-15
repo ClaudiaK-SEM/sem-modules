@@ -1,7 +1,7 @@
 #ifndef PrgChGUI_H_INCLUDED
 #define PrgChGUI_H_INCLUDED
 
-#include "MP_SDK_GUI.h"
+//#include "MP_SDK_GUI.h"
 
 class PrgChGui : public MpGuiBase
 {
