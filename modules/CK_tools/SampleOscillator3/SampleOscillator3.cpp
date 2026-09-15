@@ -18,7 +18,7 @@
 
 #include <math.h>
 #include "SampleOscillator3.h"
-#include "CSoundfont.h"
+#include "CSoundFont.h"
 #include "SampleManager.h"
 
 #define INTERPOLATION_POINTS 8
