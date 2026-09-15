@@ -149,7 +149,7 @@ int32_t Scope3Gui::OnRender(GmpiDrawing_API::IMpDeviceContext* drawingContext)
     brush->SetColor(&Color::FromBytes(23, 23, 23)); // green.*/
 
 
-	gmpi_sdk::mp_shared_ptr<IMpSolidColorBrush> brush2;
+	/*gmpi_sdk::mp_shared_ptr<IMpSolidColorBrush> brush2;
 	dc->CreateSolidColorBrush(&Color(darked_col), &brush2.get());
     //brush2->SetColor(&Color::FromBytes(23, 23, 23)); // green.
     brush2->SetColor(&Color::FromBytes(lumlo, lumlo, lumlo)); // green.
@@ -157,7 +157,7 @@ int32_t Scope3Gui::OnRender(GmpiDrawing_API::IMpDeviceContext* drawingContext)
 	gmpi_sdk::mp_shared_ptr<IMpSolidColorBrush> brush3;
 	dc->CreateSolidColorBrush(&Color(darked_col), &brush3.get());
     //brush3->SetColor(&Color::FromBytes(186, 200, 210)); // green.
-    brush3->SetColor(&Color::FromBytes(lumhi, lumhi, lumhi)); // green.
+    brush3->SetColor(&Color::FromBytes(lumhi, lumhi, lumhi)); // green.*/
 //#if defined(INTEL_HD)
 
    // brush2->SetColor(&Color::FromBytes(170, 170, 170)); // green.
@@ -170,7 +170,17 @@ int32_t Scope3Gui::OnRender(GmpiDrawing_API::IMpDeviceContext* drawingContext)
 
 //#endif
 
+	gmpi_sdk::mp_shared_ptr<IMpSolidColorBrush> brush2;
+	Color color2(darked_col);
+	dc->CreateSolidColorBrush(&color2, &brush2.get());
+    Color color2_set = Color::FromBytes(lumlo, lumlo, lumlo);
+    brush2->SetColor(&color2_set); // green.
 
+	gmpi_sdk::mp_shared_ptr<IMpSolidColorBrush> brush3;
+	Color color3(darked_col);
+	dc->CreateSolidColorBrush(&color3, &brush3.get());
+    Color color3_set = Color::FromBytes(lumhi, lumhi, lumhi);
+    brush3->SetColor(&color3_set); // green.
 
 
 	// Create font.
