@@ -9,6 +9,7 @@
 #include "math.h"
 #include "assert.h"
 #include "CSoundFont.h"
+#include <cstddef>
 
 class Jzone;
 class SoundfontPatch;
