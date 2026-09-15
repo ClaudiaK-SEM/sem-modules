@@ -37,20 +37,20 @@ void KxVoltToHzGui::onValueChanged()
 
 
     wchar_t txt[15];
-
+    const size_t txt_size = sizeof(txt) / sizeof(wchar_t);
 
 
       if(pinMode==0)//float -ok
       {
         conv=f_10;
-        swprintf(txt,L"%5.3f hz",conv);
+        swprintf(txt, txt_size, L"%5.3f hz",conv);
       }
 
 
       if(pinMode==1)//volt to dB -ok
       {
       if(f>=0.00000006f)conv=20.0f * log10f(f);
-      swprintf(txt,L"%5.3f dB",conv);
+      swprintf(txt, txt_size, L"%5.3f dB",conv);
       }
 
 
@@ -58,7 +58,7 @@ void KxVoltToHzGui::onValueChanged()
       {
         float tmp=f_10*0.05f;
         conv=10.0f * powf(10.0f,tmp );
-        swprintf(txt,L"%5.3f",conv);
+        swprintf(txt, txt_size, L"%5.3f",conv);
       }
 
 
@@ -69,33 +69,33 @@ void KxVoltToHzGui::onValueChanged()
         if(volt>10.506355f)volt=10.506355f;
         if(volt<-10.0f)volt=-10.0f;
         conv=13.75f*powf(2.0f,volt);
-        swprintf(txt,L"%5.3f hz",conv);
+        swprintf(txt, txt_size, L"%5.3f hz",conv);
       }
       else
       {
         //conv=f_10;
         conv=pinFromDSP;
-        swprintf(txt,L"%5.3f hz",conv);
+        swprintf(txt, txt_size, L"%5.3f hz",conv);
       }
 
 
       if(pinMode==4)//hz to volt -ok
       {
         if(f_10>vsn)conv=logf( f_10 / 440.0f ) / logf(2.0f) + 5.0f;
-        swprintf(txt,L"%5.3f",conv);
+        swprintf(txt, txt_size, L"%5.3f",conv);
       }
 
 
       if(pinMode==5)//Hz to Bpm -ok
       {
       conv=f_10*60.0f;//60.0f/f_10
-      swprintf(txt,L"%5.3f bpm",conv);
+      swprintf(txt, txt_size, L"%5.3f bpm",conv);
       }
 
       if(pinMode==6)//Bpm to Hz
       {
       if(f_10 >=0.002f)conv=60.0f/f_10;
-      swprintf(txt,L"%5.3f hz",conv);
+      swprintf(txt, txt_size, L"%5.3f hz",conv);
       }
 
       if(pinMode==7)//volt to hz to Bpm -ok
@@ -106,7 +106,7 @@ void KxVoltToHzGui::onValueChanged()
         float tmp;
         tmp=13.75f*powf(2.0f,volt);
         conv=tmp*60.0f;
-        swprintf(txt,L"%5.3f bpm",conv);
+        swprintf(txt, txt_size, L"%5.3f bpm",conv);
       }
 
       if(pinMode==8)//Bpm to hz to volt
@@ -118,7 +118,7 @@ void KxVoltToHzGui::onValueChanged()
         conv=logf( tmp / 440.0f ) / logf(2.0f) + 5.0f;
         }
 
-        swprintf(txt,L"%5.3f",conv);
+        swprintf(txt, txt_size, L"%5.3f",conv);
       }
 
       if(pinMode==9)//+on off 10
@@ -127,13 +127,13 @@ void KxVoltToHzGui::onValueChanged()
         {
         conv=10.0f;
         //txt=L"On";
-        swprintf(txt,L"On");
+        swprintf(txt, txt_size, L"On");
         }
         else
         {
         conv=0.0f;
         //txt=L"Off";
-        swprintf(txt,L"Off");
+        swprintf(txt, txt_size, L"Off");
         }
 
       }
@@ -144,13 +144,13 @@ void KxVoltToHzGui::onValueChanged()
         {
         conv=1.0f;
         //txt=L"On";
-        swprintf(txt,L"On");
+        swprintf(txt, txt_size, L"On");
         }
         else
         {
         conv=0.0f;
         //txt=L"Off";
-        swprintf(txt,L"Off");
+        swprintf(txt, txt_size, L"Off");
         }
       }
 
