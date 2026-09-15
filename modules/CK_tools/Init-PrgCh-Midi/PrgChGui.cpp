@@ -1,5 +1,5 @@
 #include "PrgChGui.h"
-#include <Time.h>
+#include <time.h>
 
 REGISTER_GUI_PLUGIN( PrgChGui, L"KxPrgChange" );
 
