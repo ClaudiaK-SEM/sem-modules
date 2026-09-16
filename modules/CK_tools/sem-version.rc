@@ -30,8 +30,8 @@
 #include <winver.h>
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION    @GMPI_RC_VERSION_QUAD@
- PRODUCTVERSION @GMPI_RC_VERSION_QUAD@
+ FILEVERSION 1, 0, 0, 0
+ PRODUCTVERSION 1, 0, 0, 0
  FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
 #ifdef _DEBUG
  FILEFLAGS      VS_FF_DEBUG
@@ -39,7 +39,7 @@ VS_VERSION_INFO VERSIONINFO
  FILEFLAGS      0x0L
 #endif
  FILEOS         VOS_NT_WINDOWS32
- FILETYPE       @GMPI_RC_FILETYPE@
+ FILETYPE       VFT_DLL
  FILESUBTYPE    VFT2_UNKNOWN
 BEGIN
     BLOCK "StringFileInfo"
@@ -49,13 +49,16 @@ BEGIN
         // and shows the file as having no version information at all.
         BLOCK "040904b0"
         BEGIN
+
+            VALUE "Comments",         "C Kalensky's audio DSP open source code and Jeff McClintock's SDK, ..."
             VALUE "CompanyName",      "KX77FREE and SynthEdit Ltd"
             VALUE "FileDescription",  "Claudia-Kalensky-KX77FREE-SEM-GitHub-build-09-2026"
             VALUE "FileVersion",      "1.0.0.0"
             VALUE "InternalName",     "CK_tools.sem"
+            VALUE "LegalCopyright",   "Claudia Kalensky KX77FREE-Jeff McClintock SynthEdit Ltd"
             VALUE "OriginalFilename", "CK_tools.sem"
             VALUE "ProductName",      "CK_tools.sem"
-            VALUE "ProductVersion",   "1.0.0.0"
+            VALUE "ProductVersion",    "1.0.0.0"
         END
     END
     BLOCK "VarFileInfo"
