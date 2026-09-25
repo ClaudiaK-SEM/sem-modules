@@ -51,7 +51,7 @@ add_definitions(-DSE_TARGET_SEM)
 if (MSVC)
     # Floating Point Model: Fast (/fp:fast)
     # Buffer Security Check: No (/GS-)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /02 /EHs /fp:fast /GS- /MD")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /02 /EHs /fp:fast /GS- /MD)
 endif()
 
 include(cmake/plugin_helper.cmake)
