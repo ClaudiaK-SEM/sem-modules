@@ -31,7 +31,7 @@ https://groups.io/g/synthedit/topic/sf2_player_sample_oscillator/114888390
 To solve this bug I added an input Int GUI pin, so if the preset name is changed even the SF2 name is not changed, the SF2 is loaded with the GUI thread. I added also a random generator in some processes of my KX_INIT_PrgChange module for do this.
 In my main plugins built with SE 1.4 each preset generates an ID random number, I use it to detect when the preset is changed.
 
-24/09/2026: all sources on of CK_Tools SEM on GitHub:
+24/09/2026: all sources of CK_Tools SEM on GitHub:
 - All CK AllFilters module added, total of 39 filters, all tuned with love ^^, include my Synthi filters!
 - CK-VoiceControl DSP/GUI module added, I created this module to replace the old MidiToCv and the boring PolyphonyControl module. The DSP pins control the hostconnect GUI pins by using a simple BlobToGui parameter to the GUI.
 Possibility to have the settings like old MidiToCv module: Portamento amount, Glide Rate and Auto Glide, by this way it will be more easy to replace the old MidiToCv for using the poly glide feature and to avoid the hassle to use out GUI pins of PolyphonyControl module.
