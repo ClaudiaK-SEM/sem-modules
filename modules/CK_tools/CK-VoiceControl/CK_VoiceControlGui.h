@@ -1,13 +1,13 @@
-#ifndef CK_MidiToCvGui15_H_INCLUDED
-#define CK_MidiToCvGui15_H_INCLUDED
+#ifndef CK_VoiceControlGUI_H_INCLUDED
+#define CK_VoiceControlGUI_H_INCLUDED
 
 #include "../se_sdk3/mp_sdk_gui2.h"
 
-class CK_MidiToCvGui15 : public gmpi_gui::MpGuiInvisibleBase
+class CK_VoiceControlGui2 : public gmpi_gui::MpGuiInvisibleBase
 {
 public:
-	CK_MidiToCvGui15();
-//	virtual int32_t MP_STDCALL initialize() override;
+	CK_VoiceControlGui2();
+    //virtual int32_t MP_STDCALL initialize() override;
 
 	BlobGuiPin BlobToGui;
 	IntGuiPin hostPolyphony;
@@ -20,28 +20,28 @@ private:
 
 	void onSetBlobToGui();
 
-	void onSetPolyphony();
+	//void onSetPolyphony();
 	int polyphony;
 
-	void onSetNotePriority();
+	//void onSetNotePriority();
 	int monoNotePriority;
 
-	void onSetPolyphonyReserve();
+	//void onSetPolyphonyReserve();
     int reserveVoices;
 
 	void onSetPolyAndReserve();
 
-	void onSetMonoMode();
+	//void onSetMonoMode();
 	int monoMode;
 	int monoRetrigger;
 
-	void onSetVoiceStealMode();
+	//void onSetVoiceStealMode();
 	int voiceStealMode;
 
-	void onSetGlide();
+	//void onSetGlide();
     int GlideType;
 
-	void onSetGlideTiming();
+	//void onSetGlideTiming();
     int GlideTiming;
 
 
@@ -51,7 +51,7 @@ private:
 	void onSetBendRange();
 	float BendRange;
 
-	void onSetVoiceRefresh();
+	//void onSetVoiceRefresh();
 	int VoiceRefresh;
 
 	void onSetVoiceAllocation();

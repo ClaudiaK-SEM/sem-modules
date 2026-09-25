@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PluginList>
+
+	<Plugin id="CK_VoiceControl" name="CK_VoiceControl" category="CK Tools">
+        <Parameters>
+           <Parameter id="0" name="BlobToGui" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
+        </Parameters>
+        <Audio>
+          <Pin name="BlobToGui" direction="out" datatype="blob" parameterId="0" private="true"/>
+          <Pin name="Polyphony" direction="in" datatype="int" default="6"/>
+          <Pin name="Polyphony Reserve" direction="in" datatype="int" default="0"/>
+          <Pin name="Polyphony Mode" datatype="enum" default="0"  metadata="Soft,Hard,Overlap" />
+          <Pin name="Mono Mode" datatype="enum" default="0" metadata="On=1,Off=0"/>
+          <Pin name="Retrigger" datatype="enum" default="1" metadata="On=1,Off=0"/>
+          <Pin name="Mono Note Priority" datatype="enum" default="3" metadata="Off,Low,High,Last" />
+          <Pin name="Portamento Time" direction="in" datatype="float" default="0.001"/>
+          <Pin name="Glide Rate" datatype="enum" default="1" metadata="Rate,Time" />
+          <Pin name="Auto Glide" datatype="enum" default="1" metadata="Legato,Always" />
+          <Pin name="Bend Range" datatype="enum" default="4" metadata="range 0,12" />
+          <Pin name="Voice Refresh" datatype="enum" default="1" metadata="VR On,VR Off" />
+          <Pin name="Old MidiToCv" datatype="enum" default="0" metadata="Off,On" />
+          <Pin name="Poly Glide" datatype="enum" default="0" metadata="Off,On" />
+        </Audio>
+        <GUI>
+          <Pin name="BlobToGui" direction="in" datatype="blob" parameterId="0" private="true"/>
+          <Pin name="Host Polyphony" direction="in" datatype="int" hostConnect="Polyphony" />
+          <Pin name="Host Polyphony Reserve" direction="in" datatype="int" hostConnect="ReserveVoices" />
+          <Pin name="Host VoiceAllocationMode" direction="in" datatype="int" hostConnect="VoiceAllocationMode"/>
+          <Pin name="Host PortamentoTime" hostConnect="Portamento" />
+          <Pin name="Host BenderRange" hostConnect="BenderRange" />
+        </GUI>
+    </Plugin>
+
+</PluginList>

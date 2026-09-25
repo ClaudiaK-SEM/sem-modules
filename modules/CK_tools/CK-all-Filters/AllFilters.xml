@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+    <Plugin id="CK-FILTERS" name="CK-FILTERS" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="In" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="1" name="Cutoff" direction="in" datatype="float" rate="audio" default="0.5"/>
+        <Pin id="2" name="Res" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="3" name="Out" direction="out" datatype="float" rate="audio"/>
+        <Pin id="4" name="Mode" direction="in" datatype="enum" default="0" metadata="SvLP=0,SvHP=1,SvBP=2,SvBR=3,MgLnr=4,Korg=5,MgL=6,MgL*=7,Mg*=8,MgS*=9,Hq=10,HqM=11,LoM=12,LP18=13,Lp18*=14,Lp18d*=15,BP18a=16,BP18b=17,LP12=18,BP12a=19,BP12b=20,LP6=21,BP6a=22,BP6b=23,HP=24,LpCS=25,HpCS=26,BpCS=27,RsvLp=28,RsvHp=29,RsvBp=30,RsvBr=31,Synthi*=32,Vcs3*=33,SynthiQ=34,Vcs30Q=35,Vcs24Q=36,Vcs18Q=37,Vcs12Q=38,NoRes=39"/>
+        <Pin id="5" name="SVF P or Res" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="6" name="VoiceReset" direction="in" datatype="float" hostConnect="Voice/Active" isPolyphonic="true" />
+        </Audio>
+    </Plugin>
+</PluginList>
+
+

@@ -11,22 +11,20 @@ build_gmpi_plugin(
 ${se_sdk_folder}/smart_audio_pin.h
 ${se_sdk_folder}/smart_audio_pin.cpp 
 
-# CK_MidiToCv/
-CK_MidiToCv/CK_MidiToCv.cpp
-CK_MidiToCv/CK_MidiToCv.h
-CK_MidiToCv/CK_MidiToCvGui.cpp
-CK_MidiToCv/CK_MidiToCvGui.h
-
-# CK_MidiToCv-1.5/
-CK_MidiToCv-1.5/CK_MidiToCv15.cpp
-CK_MidiToCv-1.5/CK_MidiToCv15.h
-CK_MidiToCv-1.5/CK_MidiToCvGui15.cpp
-CK_MidiToCv-1.5/CK_MidiToCvGui15.h
+# CK-all-Filters/
+CK-all-Filters/AllFilters.cpp
+CK-all-Filters/AllFilters.h
 
 # CK Open Filters
 CK-Open-Filters/Filters.cpp
 CK-Open-Filters/Filters.h
-        
+ 
+# CK-VoiceControl
+CK-VoiceControl/CK_VoiceControl.cpp
+CK-VoiceControl/CK_VoiceControl.h
+CK-VoiceControl/CK_VoiceControlGui.cpp
+CK-VoiceControl/CK_VoiceControlGui.h
+       
 # Converter
 Converter/KxConvGui.cpp
 Converter/KxConvGui.h
