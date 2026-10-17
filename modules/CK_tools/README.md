@@ -1,4 +1,4 @@
-Last update, version 1.11: 17/10/2026
+Last update, version 1.12: 17/10/2026
 
 Source code of 21 SEM modules, grouped in only one SEM.
 Include my SampleOscillator3 prefab extracted of my Kx PolyMod plug-in! Inside the SEM, there is midi modules, tools modules and my customized SE modules for special features :  Scope V4 (with variable buffer), WaveRecorder3 (Kx Wavetracer sampling features), sampleoscillator3 (GUI SF2 loading to avoid DSP drops), new Polyblep oscillator with my 8 order IIR filters done with Winfilter (Chebychev, fc 20k, fs 384k rp 0.5dB, fs 192k rp 1dB, fs 96k rp 1dB) to add oversampling features on this one.
