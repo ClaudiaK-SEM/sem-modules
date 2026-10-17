@@ -45,9 +45,7 @@ https://github.com/JeffMcClintock/synthedit-module-example
 - Updated the AbsToRel module used to recover external file paths.
 - Kx Delay3 module added: hi quality Delay with pan, stereo and mono outputs.
 - KxModX16 and KxModCS-8 midi modules added: simple code to allocate Midi notes to control the polyphony by Midi.
-
-
-
+- CK-FxSvf Filters added: SVF, Eq and AllPass filters.
 
 
 But I did another one here to compile grouped SEM modules like I do usually:
