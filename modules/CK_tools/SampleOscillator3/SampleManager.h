@@ -30,9 +30,9 @@ public:
 	int AddRef( int sampleHandle );
 	int Release( int sampleHandle );
 
-    int GeditOn ( int Ged );
-	int MemHandle ( int sampleHandle );
-	int TestOn ();
+    int GeditOn(int Ged);
+	//int MemHandle(int sampleHandle);
+	int TestOn();
 	//int TestHandle ();
 	int on;
 	//int mem;

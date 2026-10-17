@@ -28,6 +28,8 @@ SampleManager::~SampleManager()
 
 int SampleManager::Load( gmpi::IProtectedFile *file, const wchar_t* filename, int bank, int patch )
 {
+
+
 	const int channel = 0;
 	CSoundFont* soundfontData = 0;
 
@@ -171,7 +173,7 @@ int SampleManager::Release( int sampleHandle )
 }
 
 
-int SampleManager::GeditOn( int Ged )
+int SampleManager::GeditOn(int Ged)
 {
     on=Ged;
     return on;

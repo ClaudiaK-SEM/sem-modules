@@ -11,9 +11,17 @@ build_gmpi_plugin(
 ${se_sdk_folder}/smart_audio_pin.h
 ${se_sdk_folder}/smart_audio_pin.cpp 
 
-# CK-all-Filters/
+# CK-all-Filters
 CK-all-Filters/AllFilters.cpp
 CK-all-Filters/AllFilters.h
+
+# CK-Delay3
+CK-Delay3/DelayTrois.cpp
+CK-Delay3/DelayTrois.h
+
+# CK-FxSvf
+CK-FxSvf/FxSvf.cpp
+CK-FxSvf/FxSvf.h
 
 # CK Open Filters
 CK-Open-Filters/Filters.cpp
@@ -24,54 +32,55 @@ CK-VoiceControl/CK_VoiceControl.cpp
 CK-VoiceControl/CK_VoiceControl.h
 CK-VoiceControl/CK_VoiceControlGui.cpp
 CK-VoiceControl/CK_VoiceControlGui.h
-       
-# Converter
-Converter/KxConvGui.cpp
-Converter/KxConvGui.h
-    
-# Init-PrgCh-Midi/
+          
+# Init-PrgCh-Midi
 Init-PrgCh-Midi/PrgCh.cpp
 Init-PrgCh-Midi/PrgCh.h
 Init-PrgCh-Midi/PrgChGui.cpp
 Init-PrgCh-Midi/PrgChGui.h
      
-# MidiAllOff/
+# KxModCS
+KxModCS/KxmodCS.cpp
+KxModCS/KxmodCS.h
+
+# KxModX16
+KxModX16/KxmodX.cpp
+KxModX16/KxmodX.h
+
+# MidiAllOff
 MidiAllOff/MidiAllOff.cpp
 MidiAllOff/MidiAllOff.h
  
-# MidiFilterAll/
+# MidiFilterAll
 MidiFilterAll/Kxmidifilterall.cpp
 MidiFilterAll/Kxmidifilterall.h
  
-# MidiOnOff/
+# MidiOnOff
 MidiOnOff/MidiOnOff.cpp
 MidiOnOff/MidiOnOff.h
      
-# MidiSwitch2Ch/
+# MidiSwitch2Ch
 MidiSwitch2Ch/KxMidiSwitch2Ch.cpp
 MidiSwitch2Ch/KxMidiSwitch2Ch.h
 
-# Polyblep-Oscillator/
+# Polyblep-Oscillator
 Polyblep-Oscillator/Oscillator.cpp
      
-# PolyphonyControl/
+# PolyphonyControl
 PolyphonyControl/v1_PolyphonyControlGui.cpp
 PolyphonyControl/v1_PolyphonyControlGui.h
 PolyphonyControl/v6_PolyphonyControlGui.cpp
 PolyphonyControl/v6_PolyphonyControlGui.h
      
-# Rel2Abs-PM/
+# Rel2Abs-PM
 Rel2Abs-PM/FullPathX.cpp
 Rel2Abs-PM/FullPathX.h
 Rel2Abs-PM/FullPathXGui.cpp
 Rel2Abs-PM/FullPathXGui.h
 
-# SampleOscillator3/
+# SampleOscillator3
 SampleOscillator3/CSoundFont.cpp
 SampleOscillator3/CSoundFont.h
-SampleOscillator3/mfc_emulation.h
-# SampleOscillator3/protected_ifstream.cpp
-# SampleOscillator3/protected_ifstream.h
 SampleOscillator3/RiffFile2.cpp
 SampleOscillator3/RiffFile2.h
 SampleOscillator3/SampleLoader3.cpp
@@ -85,23 +94,23 @@ SampleOscillator3/SampleOscillator3.h
 SampleOscillator3/soundfont_user.cpp
 SampleOscillator3/soundfont_user.h
       
-# Scope-V4/
+# Scope-V4
 Scope-V4/Scope3.cpp
 Scope-V4/Scope3.h
 Scope-V4/Scope3Gui.cpp
 Scope-V4/Scope3Gui.h
        
-# Voice-test-Rnd/
-Voice-test-Rnd/
-Voice-test-Rnd/
+# Voice-test-Rnd
+Voice-test-Rnd/RndVoice.cpp
+Voice-test-Rnd/RndVoice.h
       
-# VoltConverter/
+# VoltConverter
 VoltConverter/KxVoltToHz.cpp
 VoltConverter/KxVoltToHz.h
 VoltConverter/KxVoltToHzGui.cpp
 VoltConverter/KxVoltToHzGui.h
 
-# WaveRecorder3/
+# WaveRecorder3
 WaveRecorder3/WaveRecorder3.cpp
 WaveRecorder3/WaveRecorder3.h
 

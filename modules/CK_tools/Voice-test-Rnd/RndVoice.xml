@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+      <Plugin id="KX77FREE VOICE ID" name="KX VOICE RESET" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="VoiceReset" direction="in" datatype="float" hostConnect="Voice/Active" isPolyphonic="true" />
+        <Pin id="1" name="Gate In" direction="in" datatype="float" rate="audio"/>
+        <Pin id="2" name="Reset voice" direction="out" datatype="float" rate="audio"/>
+        <Pin id="3" name="Rnd" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+        <Pin id="4" name="Mul" direction="in" datatype="float" default="1" rate="audio"/>
+        <Pin id="5" name="Mul Rnd" direction="in" datatype="float" default="1"/>
+        <Pin id="6" name="On" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+        <Pin id="7" name="offset Rnd" direction="in" datatype="float" default="-0.5"/>
+        </Audio>
+    </Plugin>
+</PluginList>

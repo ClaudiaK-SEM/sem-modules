@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+    <Plugin id="KX-MOD CS" name="KX-MOD CS" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="MIDI In" direction="in" datatype="midi"/>
+        <Pin id="1" name="MIDI Out " direction="out" datatype="midi"/>
+        <Pin id="2" name="Unisson" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+        <Pin id="3" name="Number of voices" direction="in" datatype="enum" default="6" metadata="range 2,6"/>
+        <Pin id="4" name="Cycle" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+        <Pin id="5" name="Note off" direction="in" datatype="enum" default="2" metadata="off=0,first=1,last=2"/>
+        <Pin id="6" name="Ctrl filter select" direction="in" datatype="enum" default="123" metadata="range 0,127"/>
+        <Pin id="7" name="Ctrl filter (on/off)" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+        <Pin id="8" name="on/off" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+        <Pin id="9" name="Channel" direction="in" datatype="enum" default="-1" metadata="All=-1,1=0,2=1,3=2,4=3,5=4,6=5,7=6,8=7,9=8,10=9,11=10,12=11,13=12,14=13,15=14,16=15"/>
+        <Pin id="10" name="MIDI Out2 " direction="out" datatype="midi"/>
+        <Pin id="11" name="Out1 Note Lo" direction="in" datatype="enum" default="0" metadata="range 0,127"/>
+        <Pin id="12" name="Out1 Note Hi" direction="in" datatype="enum" default="127" metadata="range 0,127"/>
+        <Pin id="13" name="Out2 Note Lo" direction="in" datatype="enum" default="0" metadata="range 0,127"/>
+        <Pin id="14" name="Out2 Note H1" direction="in" datatype="enum" default="127" metadata="range 0,127"/>
+        <Pin id="15" name="Mono deb" direction="in" datatype="enum" default="1" metadata="Mono on=1,Mono off=0"/>
+        </Audio>
+    </Plugin>
+</PluginList>
+
+

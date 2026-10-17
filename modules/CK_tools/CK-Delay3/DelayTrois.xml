@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+    <Plugin id="KX Delay v3" name="CK Delay v3" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="Input" direction="in" datatype="float" rate="audio" default="0" linearInput="true"/>
+        <Pin id="1" name="Feedback" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="2" name="Delay ms" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="3" name="Mod" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="4" name="FX Gain" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="5" name="Pan" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="6" name="Reset Memory" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="7" name="St Out" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="8" name="FX OutL" direction="out" datatype="float" rate="audio"/>
+        <Pin id="9" name="FX OutR" direction="out" datatype="float" rate="audio"/>
+        <Pin id="10" name="FX Mono" direction="out" datatype="float" rate="audio"/>
+        <Pin id="11" name="On" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+        <Pin id="12" name="Sinc" direction="in" datatype="enum" default="0" metadata="Lin=0,Hq=1"/>
+        </Audio>
+    </Plugin>
+</PluginList>
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<PluginList>
+    <Plugin id="KX-MOD X16" name="KX-MOD X16" category="KxMidi" graphicsApi="none">
+            <Audio>
+                <Pin id="0" name="MIDI In" direction="in" datatype="midi"/>
+                <Pin id="1" name="Out1 " direction="out" datatype="midi"/>
+                <Pin id="2" name="Out2 " direction="out" datatype="midi"/>
+                <Pin id="3" name="Out3 " direction="out" datatype="midi"/>
+                <Pin id="4" name="Out4 " direction="out" datatype="midi"/>
+                <Pin id="5" name="Out5 " direction="out" datatype="midi"/>
+                <Pin id="6" name="Out6 " direction="out" datatype="midi"/>
+                <Pin id="7" name="MIDI Out " direction="out" datatype="midi"/>
+                <Pin id="8" name="Unisson" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+                <Pin id="9" name="Number of voices" direction="in" datatype="enum" default="6" metadata="range 1,6"/>
+                <Pin id="10" name="Cycle" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+                <Pin id="11" name="Note off" direction="in" datatype="enum" default="2" metadata="off=0,first=1,last=2"/>
+                <Pin id="12" name="Ctrl filter select" direction="in" datatype="enum" default="123" metadata="range 0,127"/>
+                <Pin id="13" name="Ctrl filter (on/off)" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+                <Pin id="14" name="Channel 1" direction="in" datatype="enum" default="0" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+                <Pin id="15" name="Channel 2" direction="in" datatype="enum" default="1" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+                <Pin id="16" name="Channel 3" direction="in" datatype="enum" default="2" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+                <Pin id="17" name="Channel 4" direction="in" datatype="enum" default="3" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+                <Pin id="18" name="Channel 5" direction="in" datatype="enum" default="4" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+                <Pin id="19" name="Channel 6" direction="in" datatype="enum" default="5" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+                <Pin id="20" name="on/off" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+                <Pin id="21" name="Channel" direction="in" datatype="enum" default="-1" metadata="All=-1,1=0,2=1,3=2,4=3,5=4,6=5,7=6,8=7,9=8,10=9,11=10,12=11,13=12,14=13,15=14,16=15"/>
+            </Audio>
+    </Plugin>
+</PluginList>
+
+

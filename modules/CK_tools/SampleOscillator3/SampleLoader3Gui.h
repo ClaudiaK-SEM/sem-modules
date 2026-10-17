@@ -11,8 +11,6 @@ public:
 	virtual int32_t MP_STDCALL initialize();
 	virtual ~SampleLoader3Gui();
 
-
-
 	StringGuiPin	pinFilename;
 	IntGuiPin		pinBank;
 	IntGuiPin		pinPatch;
@@ -22,22 +20,16 @@ public:
 	IntGuiPin		pinBankReset;//CK's change
     IntGuiPin		pinIdToDsp;//CK's change
     IntGuiPin		pinIdToGui;//CK's change
-    IntGuiPin       pinRndIn;//CK's change
-    //FloatGuiPin	pinLoadingGui;//CK's change
-    //bool test();
-    //bool t;
+    IntGuiPin       pinDebugVST3;//CK's change
+    IntGuiPin       pinLoadToGui;//CK's change
 private:
 
     void load(int loading);////CK's change  : to call the sample manager for loading the sf2
-    //void loadingGUI();
-    void test();
+    void test();////CK's change : to test the file before to load and to update the patchs and the banks, names and numbers.
     int sampleHandle; ////CK's change : sf2 id
     int init;  ////CK's change : 1 when the module gui is initialized
-    int c;
-    wchar_t *memFilename;
-    int memBank;
-    int memPatch;
-    int memRnd;
+    //int loading;////CK's change
+    int buzy;////CK's change
 };
 
 #endif

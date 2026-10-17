@@ -1,6 +1,6 @@
-Last update, version 1.11: 24/09/2026
+Last update, version 1.11: 17/10/2026
 
-Source code of 17 SEM modules, grouped in only one SEM.
+Source code of 21 SEM modules, grouped in only one SEM.
 Include my SampleOscillator3 prefab extracted of my Kx PolyMod plug-in! Inside the SEM, there is midi modules, tools modules and my customized SE modules for special features :  Scope V4 (with variable buffer), WaveRecorder3 (Kx Wavetracer sampling features), sampleoscillator3 (GUI SF2 loading to avoid DSP drops), new Polyblep oscillator with my 8 order IIR filters done with Winfilter (Chebychev, fc 20k, fs 384k rp 0.5dB, fs 192k rp 1dB, fs 96k rp 1dB) to add oversampling features on this one.
 
 
@@ -40,11 +40,21 @@ Note: after lot of tests my MidiToCv project is aborted, replaced by the last CK
 - Multi-Platform releases (Windows, Apple, Linux) built on GitHub, repository base from:
 https://github.com/JeffMcClintock/synthedit-module-example
 
+17/10/2026:
+- Improved the SampleOscillator module. Checked the GUI loading code and the different use cases to update it in the CK_tools.sem as well (GitHub update). Now a single internal parameter "LoadToGui" is used to trigger the loading of SoundFont files by the GUI thread. 
+- Updated the AbsToRel module used to recover external file paths.
+- Kx Delay3 module added: hi quality Delay with pan, stereo and mono outputs.
+- KxModX16 and KxModCS-8 midi modules added: simple code to allocate Midi notes to control the polyphony by Midi.
+
+
+
+
+
 But I did another one here to compile grouped SEM modules like I do usually:
 https://github.com/ClaudiaK-SEM/sem-modules
 
-http://kx77free.free.fr
-Claudia Kalensky (KX77FREE), 24/09/2026
+https://kx77free.pages-perso.free.fr
+Claudia Kalensky (KX77FREE), 17/10/2026
 
 
 # CK_tools - Only one Plugin ^^ for you.

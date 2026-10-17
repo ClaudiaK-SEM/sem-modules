@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <PluginList>
 
+ <!-- CK-FILTERS ------------------------------------------------------------------------------------------------------------->
+
     <Plugin id="CK-FILTERS" name="CK-FILTERS" category="CK Tools" graphicsApi="none">
         <Audio>
         <Pin id="0" name="In" direction="in" datatype="float" rate="audio" default="0"/>
@@ -13,8 +15,60 @@
         </Audio>
     </Plugin>
 
+ <!-- CK-Delay3 ------------------------------------------------------------------------------------------------------------->
 
-	<Plugin id="CK_VoiceControl" name="CK_VoiceControl" category="CK Tools">
+    <Plugin id="KX Delay v3" name="CK Delay v3" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="Input" direction="in" datatype="float" rate="audio" default="0" linearInput="true"/>
+        <Pin id="1" name="Feedback" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="2" name="Delay ms" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="3" name="Mod" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="4" name="FX Gain" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="5" name="Pan" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="6" name="Reset Memory" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="7" name="St Out" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="8" name="FX OutL" direction="out" datatype="float" rate="audio"/>
+        <Pin id="9" name="FX OutR" direction="out" datatype="float" rate="audio"/>
+        <Pin id="10" name="FX Mono" direction="out" datatype="float" rate="audio"/>
+        <Pin id="11" name="On" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+        <Pin id="12" name="Sinc" direction="in" datatype="enum" default="0" metadata="Lin=0,Hq=1"/>
+        </Audio>
+    </Plugin>
+
+<!-- "CK-FxSVF" ------------------------------------------------------------------------------------------------------------->
+
+<Plugin id="KX-SVF-02" name="CK-FxSVF" category="CK Tools" graphicsApi="none">
+	<Audio>
+	<Pin id="0" name="In" direction="in" datatype="float" rate="audio" default="0"/>
+	<Pin id="1" name="Cutoff" direction="in" datatype="float" rate="audio" default="0.5"/>
+	<Pin id="2" name="Res" direction="in" datatype="float" rate="audio" default="0"/>
+	<Pin id="3" name="Out" direction="out" datatype="float" rate="audio"/>
+	<Pin id="4" name="Mode" direction="in" datatype="enum" default="0" metadata="None=0,LP=1,HP=2,BP=3,BR=4,Lp6=5,Hp6=6,EQ=7,Allp=8"/>
+	<Pin id="5" name="Voice" direction="in" datatype="float" rate="audio" default="0"/>
+	<Pin id="6" name="SVF Poles" direction="in" datatype="float" rate="audio" default="0"/>
+    <Pin id="7" name="On" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+    <Pin id="8" name="VoiceReset" direction="in" datatype="float" hostConnect="Voice/Active" isPolyphonic="true" />
+	</Audio>
+</Plugin>
+
+ <!-- Open-CK-FILTERS ------------------------------------------------------------------------------------------------------------->
+
+    <Plugin id="Open-CK-FILTERS" name="Open-CK-FILTERS" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin name="In" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin name="Cutoff" direction="in" datatype="float" rate="audio" default="0.5"/>
+        <Pin name="Res" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin name="Out" direction="out" datatype="float" rate="audio"/>
+        <Pin name="Mode" direction="in" datatype="enum" default="0" metadata="Bypass=0,NoRes=1,MgLnr=2,MgL=3,MgL*=4,Mg*=5,MgS*=6,HP=7,SvLP=8,SvHP=9,SvBP=10,SvBR=11,RsvLp=12,RsvHp=13,RsvBp=14,RsvBr=15"/>
+        <Pin name="SVF P or Res" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin name="Off" datatype="bool" default="false" />
+        <Pin name="VoiceReset" direction="in" datatype="float" hostConnect="Voice/Active" isPolyphonic="true" />
+        </Audio>
+    </Plugin>
+
+ <!-- CK_VoiceControl ------------------------------------------------------------------------------------------------------------->
+
+ 	<Plugin id="CK_VoiceControl" name="CK_VoiceControl" category="CK Tools">
         <Parameters>
            <Parameter id="0" name="BlobToGui" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
         </Parameters>
@@ -44,149 +98,86 @@
         </GUI>
     </Plugin>
 
-    <Plugin id="Open-CK-FILTERS" name="Open-CK-FILTERS" category="CK Tools" graphicsApi="none">
-        <Audio>
-        <Pin name="In" direction="in" datatype="float" rate="audio" default="0"/>
-        <Pin name="Cutoff" direction="in" datatype="float" rate="audio" default="0.5"/>
-        <Pin name="Res" direction="in" datatype="float" rate="audio" default="0"/>
-        <Pin name="Out" direction="out" datatype="float" rate="audio"/>
-        <Pin name="Mode" direction="in" datatype="enum" default="0" metadata="Bypass=0,NoRes=1,MgLnr=2,MgL=3,MgL*=4,Mg*=5,MgS*=6,HP=7,SvLP=8,SvHP=9,SvBP=10,SvBR=11,RsvLp=12,RsvHp=13,RsvBp=14,RsvBr=15"/>
-        <Pin name="SVF P or Res" direction="in" datatype="float" rate="audio" default="0"/>
-        <Pin name="Off" datatype="bool" default="false" />
-        <Pin name="VoiceReset" direction="in" datatype="float" hostConnect="Voice/Active" isPolyphonic="true" />
-        </Audio>
-    </Plugin>
+ <!-- KxPrgChange ------------------------------------------------------------------------------------------------------------->
 
-<!--Custom PolyBlep Oscillator------------------------------------------------------------------>
-
-   <Plugin id="CK PolyBlep Oscillator" name="CK PolyBlep Osc" category="CK Tools" graphicsApi="none">
-    <Audio>
-      <Pin name="Pitch" datatype="float" rate="audio" default="0.5" />
-      <Pin name="Pulse Width" datatype="float" rate="audio" default="0.5" />
-      <Pin name="Phase Mod" datatype="float" rate="audio" default="0.0" />
-      <Pin name="Sync or Gate" datatype="float" rate="audio" default="0.0" />
-      <Pin name="Int Sync Pitch" datatype="float" rate="audio" default="0.0" />
-      <Pin name="Waveform" datatype="enum" default="1" metadata="Sine,Saw,Ramp,Tri,Pulse,White,Pink" />
-      <Pin name="SyncType" datatype="enum" default="0" metadata="off,Int(HQ),ExtSync" />
-      <Pin name="Over Factor" datatype="enum" default="8" metadata="x2=2,x4=4,x8=8,x16=16" />
-      <Pin name="Bypass" datatype="bool" default="false" />
-      <Pin name="Reset Mode" datatype="enum" metadata="Free,Gate,GateVoice,Voice" />
-      <Pin name="Audio Out" datatype="float" rate="audio" direction="out" />
-      <Pin name="VoiceActive" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active" />
-      <Pin name="Volt Limit" datatype="enum" default="1" metadata="10,10.33,10.5" />
-      <Pin name="CutOff" datatype="float" rate="audio" default="1.05" />
-    </Audio>
-  </Plugin>
-
-
-<!--Custom SE - Polyphony Control------------------------------------------------------------------>
-
-<Plugin id="1v0r Polyphony Control" name="1v0r Polyphony Control" category="CK Tools" graphicsApi="none">
-    <GUI>
-      <Pin id="0" name="Host Polyphony" direction="in" datatype="int" hostConnect="Polyphony" />
-      <Pin id="1" name="Host Polyphony Reserve" direction="in" datatype="int" hostConnect="ReserveVoices" />
-    </GUI>
-  </Plugin>
-
-  <Plugin id="6v Polyphony Control" name="6v Polyphony Control" category="CK Tools" graphicsApi="none" >
-    <GUI>
-      <Pin id="0" name="Host Polyphony Reserve" direction="in" datatype="int" hostConnect="ReserveVoices" />
-    </GUI>
-  </Plugin>
-
-
-<!-- Custom SE - SampleOscillator3 ------------------------------------------------------------------------------------------->
-
-    <Plugin id="SampleOscillator3" name="Sample Oscillator3" category="CK Tools" graphicsApi="none">
-        <Audio>
-        <Pin id="0" name="Sample ID" direction="in" datatype="int"/>
-        <Pin id="1" name="Pitch" direction="in" datatype="float" rate="audio" default="0.5"/>
-        <Pin id="2" name="Trigger" direction="in" datatype="float" rate="audio" default="1.0"/>
-        <Pin id="3" name="Gate" direction="in" datatype="float" rate="audio" default="1.0"/>
-        <Pin id="4" name="Velocity" direction="in" datatype="float" rate="audio" default="0.8"/>
-        <Pin id="5" name="Quality" direction="in" datatype="enum" metadata="None=0,Low (Linear)=2,Mid (Cubic)= 4,High (sinc8)=8" default="8"/>
-        <Pin id="6" name="Left (mono)" direction="out" datatype="float" rate="audio"/>
-        <Pin id="7" name="Right" direction="out" datatype="float" rate="audio"/>
-        <Pin id="8" name="On/Off" direction="in" datatype="enum" metadata="off=0,on=1" default="0"/>
-        <Pin id="9" name="Mod" direction="in" datatype="float" rate="audio" default="0"/>
-        <Pin id="10" name="Sample tracking" direction="in" datatype="enum" metadata="Loop=0,Drum=1" default="0"/>
-        <!--Pin id="11" name="FadeLoop" direction="in" datatype="enum" metadata="off=0,on=1" default="0"/-->
-        </Audio>
-    </Plugin>
-
-    <Plugin id="SampleLoader4Gui" name="Sample Loader4 GUI" category="CK Tools">
+    <Plugin id="KxPrgChange" name="KX_INIT_PrgChange" category="CK Tools" graphicsApi="none">
         <Parameters>
-        <Parameter id="0" name="Filename to gui" datatype="string" private="true" />
-        <Parameter id="1" name="Bank to gui" datatype="int" default="0" private="true" />
-        <Parameter id="2" name="Patch to Gui" datatype="int"  default="0" private="true" />
-        <Parameter id="3" name="Gui Id to Dsp" datatype="int" default="-1" private="true" ignorePatchChange="true" persistant="false" />
-        <Parameter id="4" name="Dsp Id to Gui" datatype="int"  default="-1" private="true" ignorePatchChange="true" persistant="false" />
+        <Parameter id="0" datatype="int" private="true"/>
         </Parameters>
         <Audio>
-        <Pin id="0" name="Filename" direction="in" datatype="string" isFilename="true" metadata="sf2"/>
-        <Pin id="1" name="Bank" direction="in" datatype="int"/>
-        <Pin id="2" name="Patch" direction="in" datatype="int"/>
-        <Pin id="3" name="Sample ID" direction="out" datatype="int"/>
-        <Pin id="4" name="Filename to gui" direction="out" datatype="string" parameterId="0"/>
-        <Pin id="5" name="Bank to gui" direction="out" datatype="int" parameterId="1"/>
-        <Pin id="6" name="Patch to gui" direction="out" datatype="int" parameterId="2"/>
-        <Pin id="7" name="Id from Gui" direction="in" datatype="int" parameterId="3"/>
-        <Pin id="8" name="Id To Gui" direction="out" datatype="int" parameterId="4"/>
+        <Pin id="0" name="Prg Reset" direction="in" datatype="int" parameterId="0"/>
+        <Pin id="1" name="value" direction="in" datatype="float" rate="audio" default="1"/>
+        <Pin id="2" name="Time ms" direction="in" datatype="float" rate="audio" default="0.2"/>
+        <Pin id="3" name="Prg Ch = Value" direction="out" datatype="float" rate="audio"/>
+        <Pin id="4" name="MIDI In" direction="in" datatype="midi"/>
+        <Pin id="5" name="Mode" direction="in" datatype="enum" default="0" metadata="Plugin_INIT=0,Host_PrgCh=1,Midi_PrgCh=2,Midi_RND=3,Manual_RND=4,Init_RND=5"/>
+        <Pin id="6" name="Rnd out" direction="out" datatype="int"/>
+        <Pin id="7" name="Float trigger" direction="in" datatype="float"/>
+        <Pin id="8" name="0 value Time ms" direction="in" datatype="float" rate="audio" default="0.2"/>
         </Audio>
         <GUI>
-        <Pin id="0" name="Filename" direction="in" datatype="string" parameterId="0"/>
-        <Pin id="1" name="Bank" direction="in" datatype="int" parameterId="1"/>
-        <Pin id="2" name="Patch" direction="in" datatype="int" parameterId="2"/>
-        <Pin id="3" name="Bank Names" direction="out" datatype="string"/>
-        <Pin id="4" name="Patch Names" direction="out" datatype="string"/>
-        <Pin id="5" name="Patch reset" direction="in" datatype="int" />
-        <Pin id="6" name="Bank reset" direction="in" datatype="int" />
-        <Pin id="7" name="Id To Dsp" direction="in" datatype="int" parameterId="3"/>
-        <Pin id="8" name="Id from Dsp" direction="in" datatype="int" parameterId="4"/>
-        <Pin id="9" name="RndIn" direction="in" datatype="int"/>
+        <Pin id="0" name="Rnd in" direction="in" datatype="int" parameterId="0"/>
+        <Pin id="1" name="Program" direction="in" datatype="int" hostConnect="Program"/>
+        <Pin id="2" name="Rnd in" direction="in" datatype="int"/>
+        <Pin id="3" name="Mode" direction="in" datatype="enum" default="0" metadata="rnd and prg=0,prg=1,rnd=2,Rnd Gen=3"/>
+        <Pin id="4" name="ProgramName" direction="in" datatype="string" hostConnect="ProgramName"/>
+        <Pin id="5" name="WriteName" direction="in" datatype="bool" />
+        <Pin id="6" name="ProgramName" direction="out" datatype="string"/>
         </GUI>
     </Plugin>
 
-<!--Custom SE - Kx Scope V4------------------------------------------------------------------>
+<!-- KX-MOD CS ------------------------------------------------------------------------------------------------------------->
 
-<Plugin id="KX SCOPE V4" name="KX Scope V4" category="CK Tools" graphicsApi="GmpiGui" polyphonicAggregator="true" voiceMonitorIgnore="true" >
-    <Parameters>
-      <Parameter id="0" name="Capture Data A" datatype="blob" private="true" ignorePatchChange="true"/>
-      <Parameter id="1" name="PatchStore" datatype="blob" private="true" ignorePatchChange="true"/>
-    </Parameters>
-    <Audio>
-      <Pin id="0" name="Capture Data A" direction="out" datatype="blob"  parameterId="0" private="true"/>
-      <Pin id="1" name="Signal A" direction="in" datatype="float" rate="audio"/>
-      <Pin id="2" name="Ms" direction="in" datatype="float"  rate="audio" />
-      <Pin id="3" name="PatchStoreOut" direction="out" datatype="blob" parameterId="1" private="true"/>
-      <Pin id="4" name="On" direction="in" datatype="enum" metadata="off,on" default="0"/>
-      <Pin id="5" name="Lum" direction="in" datatype="float"  rate="audio" />
-    </Audio>
-    <GUI>
-      <Pin id="0" name="Capture Data A" direction="in" datatype="blob" parameterId="0" private="true"/>
-      <Pin id="1" name="PatchStoreIn" direction="in" datatype="blob" parameterId="1" private="true"/>
-    </GUI>
-  </Plugin>
+    <Plugin id="KX-MOD CS" name="KX-MOD CS-8" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="MIDI In" direction="in" datatype="midi"/>
+        <Pin id="1" name="MIDI Out " direction="out" datatype="midi"/>
+        <Pin id="2" name="Unisson" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+        <Pin id="3" name="Number of voices" direction="in" datatype="enum" default="8" metadata="range 2,8"/>
+        <Pin id="4" name="Cycle" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+        <Pin id="5" name="Note off" direction="in" datatype="enum" default="2" metadata="off=0,first=1,last=2"/>
+        <Pin id="6" name="Ctrl filter select" direction="in" datatype="enum" default="123" metadata="range 0,127"/>
+        <Pin id="7" name="Ctrl filter (on/off)" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+        <Pin id="8" name="on/off" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+        <Pin id="9" name="Channel" direction="in" datatype="enum" default="-1" metadata="All=-1,1=0,2=1,3=2,4=3,5=4,6=5,7=6,8=7,9=8,10=9,11=10,12=11,13=12,14=13,15=14,16=15"/>
+        <Pin id="10" name="MIDI Out2 " direction="out" datatype="midi"/>
+        <Pin id="11" name="Out1 Note Lo" direction="in" datatype="enum" default="0" metadata="range 0,127"/>
+        <Pin id="12" name="Out1 Note Hi" direction="in" datatype="enum" default="127" metadata="range 0,127"/>
+        <Pin id="13" name="Out2 Note Lo" direction="in" datatype="enum" default="0" metadata="range 0,127"/>
+        <Pin id="14" name="Out2 Note H1" direction="in" datatype="enum" default="127" metadata="range 0,127"/>
+        <Pin id="15" name="Mono deb" direction="in" datatype="enum" default="1" metadata="Mono on=1,Mono off=0"/>
+        <Pin id="16" name="Note ID" direction="out" datatype="int"/>
+        </Audio>
+    </Plugin>
 
-<!--- Custom SE - Wave Recorder3 ----------------------------------------------------------------->
+ <!-- KX-MOD X16 ------------------------------------------------------------------------------------------------------------->
 
-  <Plugin id="Wave Recorder3" name="Wave Recorder3" category="CK Tools">
-    <Audio>
-        <Pin name="File Name" datatype="string" default="Wavefile" isFilename="true" metadata="wav" />
-        <Pin name="Format" datatype="enum"  metadata="16 bit, 32 bit float" />
-        <Pin name="Time Limit" datatype="float" direction="in"/>
-        <Pin name="on" datatype="enum"  metadata="off=0,on=1" />
-        <Pin name="FS/spl" datatype="float"  direction="out"/>
-        <Pin name="Spl" datatype="float"  direction="out"/>
-        <Pin name="Written" datatype="float"  direction="out"/>
-        <Pin name="Mul FS" datatype="int"  direction="in" />
-        <Pin name="Preview" datatype="enum"  metadata="off=0, on=1" />
-        <Pin name="Output" direction="out" datatype="float" rate="audio"/>
-        <Pin name="Mul loop" datatype="enum"  metadata="range 1,40" />
-        <!--<Pin name="Input" datatype="float" rate="audio" linearInput="true" autoDuplicate="true" />-->
-        <Pin name="Input" datatype="float" rate="audio" linearInput="true" />
-    </Audio>
-  </Plugin>
+    <Plugin id="KX-MOD X16" name="KX-MOD X16" category="CK Tools" graphicsApi="none">
+		<Audio>
+			<Pin id="0" name="MIDI In" direction="in" datatype="midi"/>
+			<Pin id="1" name="Out1 " direction="out" datatype="midi"/>
+            <Pin id="2" name="Out2 " direction="out" datatype="midi"/>
+			<Pin id="3" name="Out3 " direction="out" datatype="midi"/>
+            <Pin id="4" name="Out4 " direction="out" datatype="midi"/>
+			<Pin id="5" name="Out5 " direction="out" datatype="midi"/>
+            <Pin id="6" name="Out6 " direction="out" datatype="midi"/>
+			<Pin id="7" name="MIDI Out " direction="out" datatype="midi"/>
+			<Pin id="8" name="Unisson" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+			<Pin id="9" name="Number of voices" direction="in" datatype="enum" default="6" metadata="range 1,6"/>
+			<Pin id="10" name="Cycle" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+			<Pin id="11" name="Note off" direction="in" datatype="enum" default="2" metadata="off=0,first=1,last=2"/>
+			<Pin id="12" name="Ctrl filter select" direction="in" datatype="enum" default="123" metadata="range 0,127"/>
+			<Pin id="13" name="Ctrl filter (on/off)" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+			<Pin id="14" name="Channel 1" direction="in" datatype="enum" default="0" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+			<Pin id="15" name="Channel 2" direction="in" datatype="enum" default="1" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+			<Pin id="16" name="Channel 3" direction="in" datatype="enum" default="2" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+			<Pin id="17" name="Channel 4" direction="in" datatype="enum" default="3" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+			<Pin id="18" name="Channel 5" direction="in" datatype="enum" default="4" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+			<Pin id="19" name="Channel 6" direction="in" datatype="enum" default="5" metadata="1=0,2=1,3=2,4=3,5=4,6=5,none=6,Seq=7"/>
+			<Pin id="20" name="on/off" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+			<Pin id="21" name="Channel" direction="in" datatype="enum" default="-1" metadata="All=-1,1=0,2=1,3=2,4=3,5=4,6=5,7=6,8=7,9=8,10=9,11=10,12=11,13=12,14=13,15=14,16=15"/>
+		</Audio>
+    </Plugin>
 
 <!-- kx midi all off ------------------------------------------------------------------------------------------------------------->
 
@@ -278,33 +269,41 @@
 		</Audio>
 	</Plugin>
 
-<!-- KxPrgChange ------------------------------------------------------------------------------------------------------------->
+<!--Custom PolyBlep Oscillator------------------------------------------------------------------>
 
-<Plugin id="KxPrgChange" name="KX_INIT_PrgChange" category="CK Tools" graphicsApi="none">
-    <Parameters>
-    <Parameter id="0" datatype="int" private="true"/>
-    </Parameters>
+   <Plugin id="CK PolyBlep Oscillator" name="CK PolyBlep Osc" category="CK Tools" graphicsApi="none">
     <Audio>
-    <Pin id="0" name="Prg Reset" direction="in" datatype="int" parameterId="0"/>
-    <Pin id="1" name="value" direction="in" datatype="float" rate="audio" default="1"/>
-    <Pin id="2" name="Time ms" direction="in" datatype="float" rate="audio" default="0.2"/>
-    <Pin id="3" name="Prg Ch = Value" direction="out" datatype="float" rate="audio"/>
-    <Pin id="4" name="MIDI In" direction="in" datatype="midi"/>
-    <Pin id="5" name="Mode" direction="in" datatype="enum" default="0" metadata="Plugin_INIT=0,Host_PrgCh=1,Midi_PrgCh=2,Midi_RND=3,Manual_RND=4,Init_RND=5"/>
-    <Pin id="6" name="Rnd out" direction="out" datatype="int"/>
-    <Pin id="7" name="Float trigger" direction="in" datatype="float"/>
-    <Pin id="8" name="0 value Time ms" direction="in" datatype="float" rate="audio" default="0.2"/>
+      <Pin name="Pitch" datatype="float" rate="audio" default="0.5" />
+      <Pin name="Pulse Width" datatype="float" rate="audio" default="0.5" />
+      <Pin name="Phase Mod" datatype="float" rate="audio" default="0.0" />
+      <Pin name="Sync or Gate" datatype="float" rate="audio" default="0.0" />
+      <Pin name="Int Sync Pitch" datatype="float" rate="audio" default="0.0" />
+      <Pin name="Waveform" datatype="enum" default="1" metadata="Sine,Saw,Ramp,Tri,Pulse,White,Pink" />
+      <Pin name="SyncType" datatype="enum" default="0" metadata="off,Int(HQ),ExtSync" />
+      <Pin name="Over Factor" datatype="enum" default="8" metadata="x2=2,x4=4,x8=8,x16=16" />
+      <Pin name="Bypass" datatype="bool" default="false" />
+      <Pin name="Reset Mode" datatype="enum" metadata="Free,Gate,GateVoice,Voice" />
+      <Pin name="Audio Out" datatype="float" rate="audio" direction="out" />
+      <Pin name="VoiceActive" datatype="float" private="true" isPolyphonic="true" hostConnect="Voice/Active" />
+      <Pin name="Volt Limit" datatype="enum" default="1" metadata="10,10.33,10.5" />
+      <Pin name="CutOff" datatype="float" rate="audio" default="1.05" />
     </Audio>
+  </Plugin>
+
+<!--Custom SE - Polyphony Control------------------------------------------------------------------>
+
+    <Plugin id="1v0r Polyphony Control" name="1v0r Polyphony Control" category="CK Tools" graphicsApi="none">
+        <GUI>
+          <Pin id="0" name="Host Polyphony" direction="in" datatype="int" hostConnect="Polyphony" />
+          <Pin id="1" name="Host Polyphony Reserve" direction="in" datatype="int" hostConnect="ReserveVoices" />
+        </GUI>
+    </Plugin>
+
+  <Plugin id="6v Polyphony Control" name="6v Polyphony Control" category="CK Tools" graphicsApi="none" >
     <GUI>
-    <Pin id="0" name="Rnd in" direction="in" datatype="int" parameterId="0"/>
-    <Pin id="1" name="Program" direction="in" datatype="int" hostConnect="Program"/>
-    <Pin id="2" name="Rnd in" direction="in" datatype="int"/>
-    <Pin id="3" name="Mode" direction="in" datatype="enum" default="0" metadata="rnd and prg=0,prg=1,rnd=2,Rnd Gen=3"/>
-    <Pin id="4" name="ProgramName" direction="in" datatype="string" hostConnect="ProgramName"/>
-    <Pin id="5" name="WriteName" direction="in" datatype="bool" />
-    <Pin id="6" name="ProgramName" direction="out" datatype="string"/>
+      <Pin id="0" name="Host Polyphony Reserve" direction="in" datatype="int" hostConnect="ReserveVoices" />
     </GUI>
-</Plugin>
+  </Plugin>
 
 <!-- KX Full Path Memory-x16 ------------------------------------------------------------------------------------------------------------>
 
@@ -326,20 +325,97 @@
         </GUI>
     </Plugin>
 
+<!-- Custom SE - SampleOscillator3 ------------------------------------------------------------------------------------------->
+
+    <Plugin id="SampleOscillator3" name="SFOscillator3" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="Sample ID" direction="in" datatype="int"/>
+        <Pin id="1" name="Pitch" direction="in" datatype="float" rate="audio" default="0.5"/>
+        <Pin id="2" name="Trigger" direction="in" datatype="float" rate="audio" default="1.0"/>
+        <Pin id="3" name="Gate" direction="in" datatype="float" rate="audio" default="1.0"/>
+        <Pin id="4" name="Velocity" direction="in" datatype="float" rate="audio" default="0.8"/>
+        <Pin id="5" name="Quality" direction="in" datatype="enum" metadata="None=0,Low (Linear)=2,Mid (Cubic)= 4,High (sinc8)=8" default="8"/>
+        <Pin id="6" name="Left (mono)" direction="out" datatype="float" rate="audio"/>
+        <Pin id="7" name="Right" direction="out" datatype="float" rate="audio"/>
+        <Pin id="8" name="On/Off" direction="in" datatype="enum" metadata="off=0,on=1" default="0"/>
+        <Pin id="9" name="Mod" direction="in" datatype="float" rate="audio" default="0"/>
+        <Pin id="10" name="Sample tracking" direction="in" datatype="enum" metadata="Loop=0,Drum=1" default="0"/>
+        </Audio>
+    </Plugin>
+
+    <Plugin id="SampleLoader4Gui" name="SFLoader3 DSP-GUI" category="CK Tools">
+        <Parameters>
+        <Parameter id="0" name="Filename>GUI,PrgchOn,PrivOn" datatype="string" private="true" />
+        <Parameter id="1" name="Bank>GUI,0,128,PrgchOn,PrivOn" datatype="int" default="0" private="true" />
+        <Parameter id="2" name="Patch>GUI,0,128,PrgchOn,PrivOn" datatype="int"  default="0" private="true" />
+        <Parameter id="3" name="Id>Dsp,-1,2147483647,PrgchOff,PrivOn" datatype="int" default="-1" private="true" ignorePatchChange="true" persistant="false" />
+        <Parameter id="4" name="Id>Gui,-1,2147483647,PrgchOff,PrivOn" datatype="int" default="-1" private="true" ignorePatchChange="true" persistant="false" />
+        <Parameter id="5" name="Load>GUI,1,PrgchOff,PrivOn" datatype="int" default="0" private="true" ignorePatchChange="true" persistant="false" />
+        </Parameters>
+        <Audio>
+        <Pin id="0" name="Filename" direction="in" datatype="string" isFilename="true" metadata="sf2"/>
+        <Pin id="1" name="Bank" direction="in" datatype="int"/>
+        <Pin id="2" name="Patch" direction="in" datatype="int"/>
+        <Pin id="3" name="Sample ID" direction="out" datatype="int"/>
+        <Pin id="4" name="Filename to gui" direction="out" datatype="string" parameterId="0"/>
+        <Pin id="5" name="Bank to gui" direction="out" datatype="int" parameterId="1"/>
+        <Pin id="6" name="Patch to gui" direction="out" datatype="int" parameterId="2"/>
+        <Pin id="7" name="Id from Gui" direction="in" datatype="int" parameterId="3"/>
+        <Pin id="8" name="Id To Gui" direction="out" datatype="int" parameterId="4"/>
+        <Pin id="9" name="Load To Gui" direction="out" datatype="int" parameterId="5"/>
+        </Audio>
+        <GUI>
+        <Pin id="0" name="Filename" direction="in" datatype="string" parameterId="0"/>
+        <Pin id="1" name="Bank" direction="in" datatype="int" parameterId="1"/>
+        <Pin id="2" name="Patch" direction="in" datatype="int" parameterId="2"/>
+        <Pin id="3" name="Bank Names" direction="out" datatype="string"/>
+        <Pin id="4" name="Patch Names" direction="out" datatype="string"/>
+        <Pin id="5" name="Patch reset" direction="in" datatype="int" />
+        <Pin id="6" name="Bank reset" direction="in" datatype="int" />
+        <Pin id="7" name="Id To Dsp" direction="in" datatype="int" parameterId="3"/>
+        <Pin id="8" name="Id from Dsp" direction="in" datatype="int" parameterId="4"/>
+        <!--backward compatibility of this pin-->
+        <Pin id="9" name="Debug VST3->GuiOn" direction="in" datatype="enum" metadata="OFF BankReset=0,ON BankReset=1" default="1.0" isMinimised="true"/>
+        <Pin id="10" name="LoadToGui" direction="in" datatype="int" parameterId="5"/>
+        </GUI>
+    </Plugin>
+
+<!--Custom SE - Kx Scope V4------------------------------------------------------------------>
+
+    <Plugin id="KX SCOPE V4" name="KX Scope V4" category="CK Tools" graphicsApi="GmpiGui" polyphonicAggregator="true" voiceMonitorIgnore="true" >
+        <Parameters>
+          <Parameter id="0" name="Capture Data A" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
+          <Parameter id="1" name="PatchStore" datatype="blob" private="true" ignorePatchChange="true" persistant="false"/>
+        </Parameters>
+        <Audio>
+          <Pin id="0" name="Capture Data A" direction="out" datatype="blob"  parameterId="0" private="true"/>
+          <Pin id="1" name="Signal A" direction="in" datatype="float" rate="audio"/>
+          <Pin id="2" name="Ms" direction="in" datatype="float"  rate="audio" />
+          <Pin id="3" name="PatchStoreOut" direction="out" datatype="blob" parameterId="1" private="true"/>
+          <Pin id="4" name="On" direction="in" datatype="enum" metadata="off,on" default="0"/>
+          <Pin id="5" name="Lum" direction="in" datatype="float"  rate="audio" />
+        </Audio>
+        <GUI>
+          <Pin id="0" name="Capture Data A" direction="in" datatype="blob" parameterId="0" private="true"/>
+          <Pin id="1" name="PatchStoreIn" direction="in" datatype="blob" parameterId="1" private="true"/>
+        </GUI>
+      </Plugin>
+
+
 <!-- KX77FREE VOICE TEST RND --------------------------------------------------------------------------------------------------------------------->
 
-<Plugin id="KX77FREE VOICE ID" name="KX VOICE RESET" category="CK Tools" graphicsApi="none">
-    <Audio>
-    <Pin id="0" name="VoiceReset" direction="in" datatype="float" hostConnect="Voice/Active" isPolyphonic="true" />
-    <Pin id="1" name="Gate In" direction="in" datatype="float" rate="audio"/>
-    <Pin id="2" name="Reset voice" direction="out" datatype="float" rate="audio"/>
-    <Pin id="3" name="Rnd" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
-    <Pin id="4" name="Mul" direction="in" datatype="float" default="1" rate="audio"/>
-    <Pin id="5" name="Mul Rnd" direction="in" datatype="float" default="1"/>
-    <Pin id="6" name="On" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
-    <Pin id="7" name="offset Rnd" direction="in" datatype="float" default="-0.5"/>
-    </Audio>
-</Plugin>
+    <Plugin id="KX77FREE VOICE ID" name="KX VOICE RESET" category="CK Tools" graphicsApi="none">
+        <Audio>
+        <Pin id="0" name="VoiceReset" direction="in" datatype="float" hostConnect="Voice/Active" isPolyphonic="true" />
+        <Pin id="1" name="Gate In" direction="in" datatype="float" rate="audio"/>
+        <Pin id="2" name="Reset voice" direction="out" datatype="float" rate="audio"/>
+        <Pin id="3" name="Rnd" direction="in" datatype="enum" default="0" metadata="off=0,on=1"/>
+        <Pin id="4" name="Mul" direction="in" datatype="float" default="1" rate="audio"/>
+        <Pin id="5" name="Mul Rnd" direction="in" datatype="float" default="1"/>
+        <Pin id="6" name="On" direction="in" datatype="enum" default="1" metadata="off=0,on=1"/>
+        <Pin id="7" name="offset Rnd" direction="in" datatype="float" default="-0.5"/>
+        </Audio>
+    </Plugin>
 
 <!-- KX VoltConverter ----------->
 
@@ -364,6 +440,26 @@
         <Pin id="4" name="Mode" direction="in" datatype="enum" default="0" metadata="Float=0,Volt to dB=1,db to Volt=2,Volt to Hz=3,Hz to Volt=4,Hz to Bpm=5,Bpm to Hz=6,Volt to Bpm=7,Bpm to Volt=8, On Off 10=9, On Off 1=10"/>
         <Pin id="5" name="Threshold" direction="in" datatype="float" default="0"/>
     </GUI>
+  </Plugin>
+
+ <!--- Custom SE - Wave Recorder3 ----------------------------------------------------------------->
+
+  <Plugin id="Wave Recorder3" name="Wave Recorder3" category="CK Tools">
+    <Audio>
+        <Pin name="File Name" datatype="string" default="Wavefile" isFilename="true" metadata="wav" />
+        <Pin name="Format" datatype="enum"  metadata="16 bit, 32 bit float" />
+        <Pin name="Time Limit" datatype="float" direction="in"/>
+        <Pin name="on" datatype="enum"  metadata="off=0,on=1" />
+        <Pin name="FS/spl" datatype="float"  direction="out"/>
+        <Pin name="Spl" datatype="float"  direction="out"/>
+        <Pin name="Written" datatype="float"  direction="out"/>
+        <Pin name="Mul FS" datatype="int"  direction="in" />
+        <Pin name="Preview" datatype="enum"  metadata="off=0, on=1" />
+        <Pin name="Output" direction="out" datatype="float" rate="audio"/>
+        <Pin name="Mul loop" datatype="enum"  metadata="range 1,40" />
+        <!--<Pin name="Input" datatype="float" rate="audio" linearInput="true" autoDuplicate="true" />-->
+        <Pin name="Input" datatype="float" rate="audio" linearInput="true" />
+    </Audio>
   </Plugin>
 
 </PluginList>
