@@ -1,5 +1,6 @@
 #include "FxSvf.h"
 //#include <mutex>
+#include "math.h"
 
 #define ONEPI 3.1415926535f
 #define TWOPI 6.28318530718f
