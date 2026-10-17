@@ -375,7 +375,7 @@
         <Pin id="7" name="Id To Dsp" direction="in" datatype="int" parameterId="3"/>
         <Pin id="8" name="Id from Dsp" direction="in" datatype="int" parameterId="4"/>
         <!--backward compatibility of this pin-->
-        <Pin id="9" name="Debug VST3->GuiOn" direction="in" datatype="enum" metadata="OFF BankReset=0,ON BankReset=1" default="1.0" isMinimised="true"/>
+        <Pin id="9" name="Debug VST3->GuiOn" direction="in" datatype="enum" metadata="OFF BankReset=0,ON BankReset=1" default="0" isMinimised="true"/>
         <Pin id="10" name="LoadToGui" direction="in" datatype="int" parameterId="5"/>
         </GUI>
     </Plugin>
