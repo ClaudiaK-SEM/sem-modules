@@ -16,35 +16,36 @@ FullPathX::FullPathX(IMpUnknown* host) : MpBase(host)
 	initializePin( 1, pinAbsPath );
 	initializePin( 2, pinPathOut );
 }
-
 void FullPathX::onSetPins(void)
 {
-    if(Filename.isUpdated() || pinAbsPath.isUpdated())
+    if (Filename.isUpdated() || pinAbsPath.isUpdated())
     {
         fs::path ap(pinAbsPath.getValue());
+        std::error_code ec;
 
-        if(pinAbsPath.getValue().empty())
+        if (pinAbsPath.getValue().empty())
         {
-            //Host resolves the filename
             std::wstring filename = Filename.getValue();
-            wchar_t fullFilename[1024];
+            wchar_t fullFilename[500];
             getHost()->resolveFilename(filename.c_str(), sizeof(fullFilename) / sizeof(fullFilename[0]), fullFilename);
-            //const int maxpath = 500;
-            //wchar_t fullFilename[maxpath];
-            //getHost()->resolveFilename( Filename.getValue().c_str(), maxpath, fullFilename ); //max path =260
             pinPathOut = fullFilename;
         }
-        else if(fs::is_directory(ap))
+        else if (fs::is_directory(ap, ec) && !ec)
         {
-            // Compose path using fs::path (cross-platform safe)
             fs::path base = pinAbsPath.getValue();
             fs::path filename = StripPath(Filename.getValue().c_str());
             fs::path finalPath = base / filename;
             pinPathOut = finalPath.wstring();
         }
+        else
+        {
+            std::wstring filename = Filename.getValue();
+            wchar_t fullFilename[500];
+            getHost()->resolveFilename(filename.c_str(),sizeof(fullFilename) / sizeof(fullFilename[0]),fullFilename);
+            pinPathOut = fullFilename;
+        }
     }
 }
-
 
 
 

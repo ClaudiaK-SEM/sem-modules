@@ -74,7 +74,7 @@ void SampleLoader3::load()//to call the loading with the sample manager
             //getHost()->resolveFilename( pinFilename.getValue().c_str(), maxpath, fullFilename ); //max path =260
 
             std::wstring filename = pinFilename.getValue();
-            wchar_t fullFilename[1024];
+            wchar_t fullFilename[500];
             getHost()->resolveFilename(filename.c_str(), sizeof(fullFilename) / sizeof(fullFilename[0]), fullFilename);
 
             std::wstring pathR = fullFilename;// unicode

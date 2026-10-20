@@ -1,4 +1,4 @@
-Last update, version 1.11: 17/10/2026
+Last update, version 1.13: 20/10/2026
 
 Source code of 21 SEM modules, grouped in only one SEM.
 Include my SampleOscillator3 prefab extracted of my Kx PolyMod plug-in! Inside the SEM, there is midi modules, tools modules and my customized SE modules for special features :  Scope V4 (with variable buffer), WaveRecorder3 (Kx Wavetracer sampling features), sampleoscillator3 (GUI SF2 loading to avoid DSP drops), new Polyblep oscillator with my 8 order IIR filters done with Winfilter (Chebychev, fc 20k, fs 384k rp 0.5dB, fs 192k rp 1dB, fs 96k rp 1dB) to add oversampling features on this one.
@@ -47,12 +47,15 @@ https://github.com/JeffMcClintock/synthedit-module-example
 - KxModX16 and KxModCS-8 midi modules added: simple code to allocate Midi notes to control the polyphony by Midi.
 - CK-FxSvf Filters added: SVF, Eq and AllPass filters.
 
+20/10/2026:
+-Fixed bug on module AbsToRel if the volume of AbsPath doesn't exist.
+
 
 But I did another one here to compile grouped SEM modules like I do usually:
 https://github.com/ClaudiaK-SEM/sem-modules
 
 https://kx77free.pages-perso.free.fr
-Claudia Kalensky (KX77FREE), 17/10/2026
+Claudia Kalensky (KX77FREE), 20/10/2026
 
 
 # CK_tools - Only one Plugin ^^ for you.
